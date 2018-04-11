@@ -89,10 +89,10 @@
         <Class IRI="http://www.essepuntato.it/2008/12/pattern#Bucket"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://purl.org/semsur/supportTechnology"/>
+        <ObjectProperty IRI="http://purl.org/semsur/forProblem"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://purl.org/semsur/forProblem"/>
+        <ObjectProperty IRI="http://purl.org/semsur/supportTechnology"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/spar/fabio/NewspaperNewsItem"/>
@@ -308,10 +308,10 @@
         <NamedIndividual IRI="http://purl.org/semsur/Haofen_Wang"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.org/semsur/Ali_Hasnain"/>
+        <NamedIndividual IRI="http://purl.org/semsur/Jurgen_Umbrich"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.org/semsur/Jurgen_Umbrich"/>
+        <NamedIndividual IRI="http://purl.org/semsur/Ali_Hasnain"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="expo:ObjectEffect"/>
@@ -539,10 +539,10 @@
         <NamedIndividual IRI="http://purl.org/semsur/Link_Discovery"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://prismstandard.org/namespaces/basic/2.0/versionIdentifier"/>
+        <NamedIndividual IRI="http://purl.org/semsur/International_Conference_on_Conceptual_Modeling"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.org/semsur/International_Conference_on_Conceptual_Modeling"/>
+        <DataProperty IRI="http://prismstandard.org/namespaces/basic/2.0/versionIdentifier"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="foaf:openid"/>
@@ -593,10 +593,10 @@
         <ObjectProperty IRI="http://purl.org/semsur/usesDataset"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="expo:HypothesisRepresentation"/>
+        <Class IRI="http://purl.org/semsur/Accuracy"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/semsur/Accuracy"/>
+        <Class abbreviatedIRI="expo:HypothesisRepresentation"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="expo:has_author"/>
@@ -698,10 +698,10 @@
         <NamedIndividual abbreviatedIRI="terms:MESH"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/spar/doco/ListOfTables"/>
+        <Class IRI="http://purl.org/spar/fabio/InstructionManual"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/spar/fabio/InstructionManual"/>
+        <Class IRI="http://purl.org/spar/doco/ListOfTables"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://purl.org/semsur/CROSS"/>
@@ -848,10 +848,10 @@
         <Class abbreviatedIRI="expo:NonlinearModel"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/spar/doco/TableBox"/>
+        <Class IRI="http://purl.org/spar/fabio/LiteraryArtisticWork"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/spar/fabio/LiteraryArtisticWork"/>
+        <Class IRI="http://purl.org/spar/doco/TableBox"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="expo:DynamismOfModel"/>
@@ -929,10 +929,10 @@
         <ObjectProperty abbreviatedIRI="expo:has_strategy"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="expo:DesigningExperiment"/>
+        <DataProperty abbreviatedIRI="terms:bibliographicCitation"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="terms:bibliographicCitation"/>
+        <Class abbreviatedIRI="expo:DesigningExperiment"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="swrc:year"/>
@@ -956,10 +956,10 @@
         <NamedIndividual IRI="http://purl.org/spar/fabio/ram"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.org/semsur/Dimitrios-Emmanuel_Spanos"/>
+        <Class IRI="http://purl.org/spar/fabio/AnalogManifestation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/spar/fabio/AnalogManifestation"/>
+        <NamedIndividual IRI="http://purl.org/semsur/Dimitrios-Emmanuel_Spanos"/>
     </Declaration>
     <Declaration>
         <Datatype abbreviatedIRI="terms:RFC5646"/>
@@ -1010,10 +1010,10 @@
         <NamedIndividual IRI="http://purl.org/semsur/OAEI_2010"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="foaf:depicts"/>
+        <ObjectProperty abbreviatedIRI="expo:has_generality"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="expo:has_generality"/>
+        <ObjectProperty abbreviatedIRI="foaf:depicts"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://purl.org/semsur/AAAI_Conference_on_Artificial_Intelligence"/>
@@ -1088,13 +1088,13 @@
         <Class abbreviatedIRI="expo:SequentialDesign"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="swrc:FacultyMember"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty abbreviatedIRI="swrc:financedBy"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://purl.org/semsur/Semantic_Relation_Composition_in_Large_Scale"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="swrc:FacultyMember"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://purl.org/spar/fabio/hasElectronicArticleIdentifier"/>
@@ -1250,10 +1250,10 @@
         <DataProperty abbreviatedIRI="terms:tableOfContents"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://vocab.cs.uni-bonn.de/unistruct#LogMap:Logic-based_and_Scalable_Ontology_Matching"/>
+        <NamedIndividual IRI="http://vocab.cs.uni-bonn.de/unistruct#KnoFuss:_A_Comprehensive_Architecture_for_Knowledge_Fusion"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://vocab.cs.uni-bonn.de/unistruct#KnoFuss:_A_Comprehensive_Architecture_for_Knowledge_Fusion"/>
+        <NamedIndividual IRI="http://vocab.cs.uni-bonn.de/unistruct#LogMap:Logic-based_and_Scalable_Ontology_Matching"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="expo:TimeEffect"/>
@@ -1283,10 +1283,10 @@
         <Class IRI="http://purl.org/spar/fabio/NewsItem"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.org/semsur/Samson_Tu"/>
+        <Class IRI="http://purl.org/semsur/Benchmark"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/semsur/Benchmark"/>
+        <NamedIndividual IRI="http://purl.org/semsur/Samson_Tu"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="expo:TechnicalDescription"/>
@@ -1322,10 +1322,10 @@
         <Class IRI="http://purl.org/spar/fabio/StorageMedium"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="expo:has_SUMO_sinonym"/>
+        <NamedIndividual IRI="http://purl.org/semsur/deep_annotation_for_mapping_and_migrating_legacy_data_to_the_Semantic_Web"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.org/semsur/deep_annotation_for_mapping_and_migrating_legacy_data_to_the_Semantic_Web"/>
+        <ObjectProperty abbreviatedIRI="expo:has_SUMO_sinonym"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="skos:OrderedCollection"/>
@@ -1550,10 +1550,10 @@
         <Class IRI="http://purl.org/spar/doco/Section"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.org/semsur/Periklis_Stavrou"/>
+        <Class IRI="http://purl.org/spar/fabio/Microblog"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/spar/fabio/Microblog"/>
+        <NamedIndividual IRI="http://purl.org/semsur/Periklis_Stavrou"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/spar/fabio/ReferenceWork"/>
@@ -1586,10 +1586,10 @@
         <NamedIndividual abbreviatedIRI="terms:medium"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="swrc:ResearchProject"/>
+        <Class abbreviatedIRI="expo:ComputeGoal"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="expo:ComputeGoal"/>
+        <Class abbreviatedIRI="swrc:ResearchProject"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="swrc:author"/>
@@ -1652,16 +1652,16 @@
         <NamedIndividual IRI="http://purl.org/semsur/AgreementMaker"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.org/semsur/decomposition_approach"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="expo:ExplainGoal"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="expo:Validity"/>
+        <Datatype abbreviatedIRI="terms:URI"/>
     </Declaration>
     <Declaration>
-        <Datatype abbreviatedIRI="terms:URI"/>
+        <NamedIndividual IRI="http://purl.org/semsur/decomposition_approach"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="expo:Validity"/>
     </Declaration>
     <Declaration>
         <NamedIndividual abbreviatedIRI="terms:relation"/>
@@ -1814,10 +1814,10 @@
         <NamedIndividual IRI="http://purl.org/semsur/LIMES_-_A_Time-Efficient_Approach_for_Large-Scale_Link_Discovery_on_the_Web_of_Data"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.org/semsur/Shu_Rong"/>
+        <NamedIndividual abbreviatedIRI="terms:Policy"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="terms:Policy"/>
+        <NamedIndividual IRI="http://purl.org/semsur/Shu_Rong"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="j.0:Scenario"/>
@@ -2069,13 +2069,13 @@
         <Class IRI="http://org.semanticweb.owlapi/error#Error3"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/spar/doco/FigureBox"/>
-    </Declaration>
-    <Declaration>
         <AnnotationProperty abbreviatedIRI="terms:creator"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="swrc:editor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/spar/doco/FigureBox"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/semsur/FunctionalProgramming"/>
@@ -2093,16 +2093,16 @@
         <Class abbreviatedIRI="expo:SUMOSynonym"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="expo:has_fax_number"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.org/spar/fabio/UncontrolledVocabulary"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="terms:title"/>
+        <ObjectProperty abbreviatedIRI="expo:has_fax_number"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://purl.org/semsur/Ljiljana_Stojanovic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="terms:title"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://purl.org/spar/fabio/web"/>
@@ -2240,10 +2240,10 @@
         <NamedIndividual IRI="http://purl.org/semsur/Daniel_Schwabe"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/spar/fabio/WhitePaper"/>
+        <NamedIndividual IRI="http://purl.org/semsur/Yunlong_Zhang"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.org/semsur/Yunlong_Zhang"/>
+        <Class IRI="http://purl.org/spar/fabio/WhitePaper"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/spar/fabio/MastersThesis"/>
@@ -2285,16 +2285,16 @@
         <NamedIndividual IRI="http://purl.org/semsur/SPARQL_query_Federation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.org/semsur/Sören_Auer"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty abbreviatedIRI="foaf:topic"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/spar/fabio/Quotation"/>
+        <NamedIndividual IRI="http://purl.org/semsur/Sören_Auer"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="swrc:Association"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/spar/fabio/Quotation"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="expo:ContentBearingPhysical"/>
@@ -2387,10 +2387,10 @@
         <Class IRI="http://purl.org/spar/fabio/Policy"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.org/semsur/an_OWL_wrapper_for_teasoning_on_relational_databases"/>
+        <AnnotationProperty abbreviatedIRI="terms:source"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="terms:source"/>
+        <NamedIndividual IRI="http://purl.org/semsur/an_OWL_wrapper_for_teasoning_on_relational_databases"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/spar/fabio/DatabaseManagementSystem"/>
@@ -2477,10 +2477,10 @@
         <Class IRI="http://purl.org/semsur/Challenges"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="terms:abstract"/>
+        <NamedIndividual IRI="http://purl.org/semsur/Peter_Haase"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.org/semsur/Peter_Haase"/>
+        <NamedIndividual abbreviatedIRI="terms:abstract"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://purl.org/semsur/A_Plug-in_for_Importing_Schemas_and_Data_from_Relational_Databases_into_Protégé"/>
@@ -2543,10 +2543,10 @@
         <Class IRI="http://purl.org/spar/fabio/GanttChart"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="expo:has_result_interpretation"/>
+        <Class IRI="http://purl.org/spar/doco/ChapterLabel"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/spar/doco/ChapterLabel"/>
+        <ObjectProperty abbreviatedIRI="expo:has_result_interpretation"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/semsur/Availability"/>
@@ -2663,10 +2663,10 @@
         <Class abbreviatedIRI="expo:CorpuscularObject"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="terms:license"/>
+        <DataProperty abbreviatedIRI="terms:dateCopyrighted"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="terms:dateCopyrighted"/>
+        <ObjectProperty abbreviatedIRI="terms:license"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="expo:has_latest_modification"/>
@@ -2912,10 +2912,10 @@
         <Class abbreviatedIRI="expo:Formula"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="expo:RepresenationalMedium"/>
+        <NamedIndividual IRI="http://purl.org/semsur/Gerald_Reif"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.org/semsur/Gerald_Reif"/>
+        <Class abbreviatedIRI="expo:RepresenationalMedium"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/spar/fabio/PolicyDocument"/>
@@ -2933,10 +2933,10 @@
         <Class IRI="http://purl.org/spar/fabio/ConferencePoster"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="foaf:plan"/>
+        <NamedIndividual IRI="http://purl.org/semsur/International_Workshop_on_Ontology_Matching"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.org/semsur/International_Workshop_on_Ontology_Matching"/>
+        <DataProperty abbreviatedIRI="foaf:plan"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="terms:replaces"/>
@@ -3065,10 +3065,10 @@
         <NamedIndividual abbreviatedIRI="terms:RFC1766"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="expo:EnvironmentalRequirements"/>
+        <Class IRI="http://purl.org/spar/fabio/Notebook"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/spar/fabio/Notebook"/>
+        <Class abbreviatedIRI="expo:EnvironmentalRequirements"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://purl.org/semsur/A_Schema-Independent_Linked_Data_Interlinking_System"/>
@@ -3086,10 +3086,10 @@
         <Class abbreviatedIRI="expo:Reference"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:relation"/>
+        <Class IRI="http://purl.org/spar/fabio/Specification"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/spar/fabio/Specification"/>
+        <AnnotationProperty abbreviatedIRI="dc:relation"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://purl.org/semsur/Maria-Esther_Vidal"/>
@@ -3179,10 +3179,10 @@
         <Class IRI="http://purl.org/spar/fabio/Chapter"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.org/semsur/A_Survey_of_Approaches_and_Evaluation_Methods"/>
+        <ObjectProperty IRI="http://purl.org/semsur/usesBenchmark"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://purl.org/semsur/usesBenchmark"/>
+        <NamedIndividual IRI="http://purl.org/semsur/A_Survey_of_Approaches_and_Evaluation_Methods"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/spar/fabio/TechnicalReport"/>
@@ -3227,10 +3227,10 @@
         <Class abbreviatedIRI="expo:FactRejectResearchHypothesis"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.org/semsur/IEEE"/>
+        <ObjectProperty abbreviatedIRI="expo:has_action_complexity"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="expo:has_action_complexity"/>
+        <NamedIndividual IRI="http://purl.org/semsur/IEEE"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="expo:ClassificationByDomain"/>
@@ -3287,10 +3287,10 @@
         <NamedIndividual IRI="http://purl.org/semsur/DBpedia"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="swrc:Organization"/>
+        <NamedIndividual abbreviatedIRI="terms:requires"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="terms:requires"/>
+        <Class abbreviatedIRI="swrc:Organization"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://purl.org/semsur/Giorgio_Orsi"/>
@@ -3332,10 +3332,10 @@
         <AnnotationProperty abbreviatedIRI="terms:valid"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://purl.org/vocab/frbr/core#summarizationOf"/>
+        <ObjectProperty abbreviatedIRI="terms:type"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="terms:type"/>
+        <ObjectProperty IRI="http://purl.org/vocab/frbr/core#summarizationOf"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="expo:DomainAction"/>
@@ -3413,13 +3413,13 @@
         <ObjectProperty abbreviatedIRI="foaf:aimChatID"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty abbreviatedIRI="terms:isRequiredBy"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://purl.org/vocab/frbr/core#alternateOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="expo:has_standard"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty abbreviatedIRI="terms:isRequiredBy"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/vocab/frbr/core#Subject"/>
@@ -3590,10 +3590,10 @@
         <NamedIndividual IRI="http://purl.org/semsur/Victoria_Uren"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="terms:source"/>
+        <Class IRI="http://purl.org/spar/fabio/DoctoralThesis"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/spar/fabio/DoctoralThesis"/>
+        <NamedIndividual abbreviatedIRI="terms:source"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://purl.org/semsur/Jan_L._Top"/>
@@ -3659,10 +3659,10 @@
         <Class IRI="http://purl.org/spar/fabio/WikiEntry"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="swrc:abstract"/>
+        <ObjectProperty abbreviatedIRI="terms:accrualMethod"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="terms:accrualMethod"/>
+        <ObjectProperty abbreviatedIRI="swrc:abstract"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://purl.org/semsur/FQAS"/>
@@ -3704,10 +3704,10 @@
         <Class IRI="http://purl.org/spar/fabio/ReviewArticle"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.org/semsur/Life_Science"/>
+        <ObjectProperty abbreviatedIRI="foaf:knows"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="foaf:knows"/>
+        <NamedIndividual IRI="http://purl.org/semsur/Life_Science"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="expo:ModelRepresentation"/>
@@ -3782,10 +3782,10 @@
         <Class IRI="http://purl.org/spar/fabio/Postprint"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/spar/fabio/Index"/>
+        <Class IRI="http://purl.org/spar/fabio/Corrigendum"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/spar/fabio/Corrigendum"/>
+        <Class IRI="http://purl.org/spar/fabio/Index"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="terms:isVersionOf"/>
@@ -3863,10 +3863,10 @@
         <Class IRI="http://www.essepuntato.it/2008/12/pattern#Marker"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://purl.org/spar/fabio/stores"/>
+        <Class IRI="http://purl.org/spar/fabio/BookReview"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/spar/fabio/BookReview"/>
+        <ObjectProperty IRI="http://purl.org/spar/fabio/stores"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="swrc:cooperateWith"/>
@@ -3944,19 +3944,19 @@
         <Class abbreviatedIRI="expo:AdminInfoObjectOfExperiment"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/vocab/frbr/core#Place"/>
+        <AnnotationProperty abbreviatedIRI="terms:isReplacedBy"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="terms:isReplacedBy"/>
+        <Class IRI="http://purl.org/vocab/frbr/core#Place"/>
     </Declaration>
     <Declaration>
         <DataProperty abbreviatedIRI="foaf:age"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="terms:extent"/>
+        <NamedIndividual abbreviatedIRI="terms:MethodOfInstruction"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="terms:MethodOfInstruction"/>
+        <ObjectProperty abbreviatedIRI="terms:extent"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/dc/dcam/VocabularyEncodingScheme"/>
@@ -4058,10 +4058,10 @@
         <Class IRI="http://purl.org/spar/fabio/Database"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/spar/fabio/StructuredSummary"/>
+        <Class IRI="http://www.essepuntato.it/2008/12/pattern#Meta"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.essepuntato.it/2008/12/pattern#Meta"/>
+        <Class IRI="http://purl.org/spar/fabio/StructuredSummary"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="expo:ResearchCouncilsUKClassification"/>
@@ -4103,10 +4103,10 @@
         <NamedIndividual IRI="http://purl.org/semsur/International_Workshop_on_Databases_in_Networked_Information_Systems"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.essepuntato.it/2008/12/pattern#Mixed"/>
+        <NamedIndividual IRI="http://purl.org/semsur/Accessing_and_Documenting_Relational_Databases_through_OWL_Ontologies"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.org/semsur/Accessing_and_Documenting_Relational_Databases_through_OWL_Ontologies"/>
+        <Class IRI="http://www.essepuntato.it/2008/12/pattern#Mixed"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/vocab/frbr/core#CorporateBody"/>
@@ -4256,6 +4256,9 @@
         <DataProperty IRI="http://purl.org/spar/fabio/hasSubtitle"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="expo:SubjectRole"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="expo:HypothesisAcceptanceMistake"/>
     </Declaration>
     <Declaration>
@@ -4263,9 +4266,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.org/semsur/implementedIn"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="expo:SubjectRole"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="mls:EvaluationSpecification"/>
@@ -4436,10 +4436,10 @@
         <Class IRI="http://purl.org/vocab/frbr/core#Work"/>
     </Declaration>
     <Declaration>
-        <DataProperty abbreviatedIRI="terms:modified"/>
+        <Class IRI="http://purl.org/spar/fabio/DustJacket"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/spar/fabio/DustJacket"/>
+        <DataProperty abbreviatedIRI="terms:modified"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="swrc:head"/>
@@ -4460,10 +4460,10 @@
         <ObjectProperty abbreviatedIRI="expo:has_pasword"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://purl.org/semsur/hasSolution"/>
+        <Class IRI="http://purl.org/orb/1.0/Header"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/orb/1.0/Header"/>
+        <ObjectProperty IRI="http://purl.org/semsur/hasSolution"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="expo:GeneKnock-in"/>
@@ -4523,10 +4523,10 @@
         <Class abbreviatedIRI="expo:DomainModel"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.org/semsur/Tomáš_Kliegr"/>
+        <Class IRI="http://purl.org/spar/fabio/ExaminationPaper"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/spar/fabio/ExaminationPaper"/>
+        <NamedIndividual IRI="http://purl.org/semsur/Tomáš_Kliegr"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="expo:GeneKnock-out"/>
@@ -4622,10 +4622,10 @@
         <Class IRI="http://purl.org/spar/fabio/OntologyDocument"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="expo:DependentVariable"/>
+        <ObjectProperty IRI="http://purl.org/vocab/frbr/core#abridgementOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://purl.org/vocab/frbr/core#abridgementOf"/>
+        <Class abbreviatedIRI="expo:DependentVariable"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://purl.org/semsur/Type_Prediction_for_Efficient_Coreference_Resolution_in_Heterogeneous_Semantic_Graphs"/>
@@ -4673,10 +4673,10 @@
         <Class IRI="http://purl.org/spar/doco/Paragraph"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="terms:hasFormat"/>
+        <NamedIndividual abbreviatedIRI="terms:contributor"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="terms:contributor"/>
+        <ObjectProperty abbreviatedIRI="terms:hasFormat"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="expo:has_evaluation"/>
@@ -4712,10 +4712,10 @@
         <Class IRI="http://purl.org/semsur/Technology"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://www.essepuntato.it/2008/12/pattern#canContainHomonymousElements"/>
+        <NamedIndividual IRI="http://purl.org/semsur/OntoMat-Reverse"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.org/semsur/OntoMat-Reverse"/>
+        <DataProperty IRI="http://www.essepuntato.it/2008/12/pattern#canContainHomonymousElements"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="skos:relatedMatch"/>
@@ -4784,10 +4784,10 @@
         <Class abbreviatedIRI="foaf:Group"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/spar/doco/Chapter"/>
+        <DataProperty IRI="http://purl.org/spar/fabio/hasShortTitle"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://purl.org/spar/fabio/hasShortTitle"/>
+        <Class IRI="http://purl.org/spar/doco/Chapter"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/spar/fabio/Entry"/>
@@ -4802,10 +4802,10 @@
         <ObjectProperty IRI="http://purl.org/semsur/hasHypothesis"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/orb/1.0/Acknowledgements"/>
+        <NamedIndividual abbreviatedIRI="terms:coverage"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="terms:coverage"/>
+        <Class IRI="http://purl.org/orb/1.0/Acknowledgements"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/spar/fabio/Item"/>
@@ -4853,13 +4853,13 @@
         <Class IRI="http://purl.org/spar/fabio/Micropost"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual abbreviatedIRI="terms:ISO639-3"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/spar/fabio/Newspaper"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.org/vocab/frbr/core#supplement"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="terms:ISO639-3"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://purl.org/semsur/Connor"/>
@@ -4871,10 +4871,10 @@
         <Class abbreviatedIRI="expo:Sentence"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="expo:ExperimentalModel"/>
+        <Class IRI="http://purl.org/spar/fabio/ProductReview"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/spar/fabio/ProductReview"/>
+        <Class abbreviatedIRI="expo:ExperimentalModel"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://purl.org/semsur/Andrea_Giovanni_Nuzzolese"/>
@@ -4886,10 +4886,10 @@
         <NamedIndividual IRI="http://purl.org/semsur/Andreas_Schwarte"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/orb/1.0/Results"/>
+        <Class abbreviatedIRI="expo:EperimentalDesignTask"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="expo:EperimentalDesignTask"/>
+        <Class IRI="http://purl.org/orb/1.0/Results"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/spar/fabio/CompleteWorks"/>
@@ -4904,10 +4904,10 @@
         <ObjectProperty IRI="http://purl.org/vocab/frbr/core#arrangement"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="expo:PublicAcademicStatus"/>
+        <Class abbreviatedIRI="expo:TimeMeasure"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="expo:TimeMeasure"/>
+        <Class abbreviatedIRI="expo:PublicAcademicStatus"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="expo:TimePoint"/>
@@ -5033,10 +5033,10 @@
         <Class abbreviatedIRI="swrc:ResearchGroup"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.org/semsur/Steffen_Staab"/>
+        <Class abbreviatedIRI="expo:ComputationalExperiment"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="expo:ComputationalExperiment"/>
+        <NamedIndividual IRI="http://purl.org/semsur/Steffen_Staab"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/spar/fabio/DefinitiveVersion"/>
@@ -5078,10 +5078,10 @@
         <Class abbreviatedIRI="expo:MethodGoal"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="expo:AdminInfoAuthor"/>
+        <NamedIndividual IRI="http://purl.org/semsur/Factorizing_YAGO"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.org/semsur/Factorizing_YAGO"/>
+        <Class abbreviatedIRI="expo:AdminInfoAuthor"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="terms:LicenseDocument"/>
@@ -5126,10 +5126,10 @@
         <ObjectProperty IRI="http://purl.org/semsur/hasDocumentation"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="expo:InterpretingResult"/>
+        <Class abbreviatedIRI="expo:Language"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="expo:Language"/>
+        <Class abbreviatedIRI="expo:InterpretingResult"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/spar/fabio/NewspaperEditorial"/>
