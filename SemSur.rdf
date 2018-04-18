@@ -38,22 +38,20 @@
     <Prefix name="schema" IRI="http://schema.org/"/>
     <Prefix name="semsur" IRI="http://vocab.cs.uni-bonn.de/semanticSurvey/SemSur#"/>
     <Prefix name="protege" IRI="http://protege.stanford.edu/plugins/owl/protege#"/>
+    <Import>http://purl.org/spar/doco/2015-07-03</Import>
     <Import>http://swrc.ontoware.org/ontology</Import>
     <Import>http://www.hozo.jp/owl/EXPOApr19.xml/</Import>
     <Import>http://purl.org/spar/doco</Import>
     <Import>http://purl.org/spar/deo</Import>
     <Import>http://www.w3.org/2003/11/swrl#</Import>
     <Import>http://purl.org/spar/fabio/</Import>
+    <Import>http://purl.org/spar/fabio/2017-05-29</Import>
     <Import>http://www.w3.org/2016/03/mls#</Import>
     <Import>http://swrl.stanford.edu/ontologies/3.3/swrla.owl</Import>
     <Import>http://www.w3.org/2004/02/skos/core</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:priorVersion"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.0</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="dc:creator"/>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Said Fathalla</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
@@ -72,10 +70,14 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Christoph Lange</Literal>
     </Annotation>
     <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Said Fathalla</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">SemSur, the Semantic Survey Ontology, is a core ontology for describing individual research problems, approaches, implementations and evaluations in a structured, comparable way.</Literal>
     </Annotation>
-       <Annotation>
+    <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">2.0</Literal>
     </Annotation>
