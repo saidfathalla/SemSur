@@ -22,6 +22,7 @@
      xmlns:wot="http://xmlns.com/wot/0.1/"
      xmlns:expo="http://www.hozo.jp/owl/EXPOApr19.xml/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:cc="http://creativecommons.org/ns#"
      xmlns:swrc="http://swrc.ontoware.org/ontology#"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
@@ -60,6 +61,7 @@
         <dc:rights>Copyright 2018 </dc:rights>
         <dc:creator xml:lang="en">Soeren Auer</dc:creator>
         <dc:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">SemSur, the Semantic Survey Ontology, is a core ontology for describing individual research problems, approaches, implementations and evaluations in a structured, comparable way.</dc:description>
+		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/> 
     </owl:Ontology>
     
 
