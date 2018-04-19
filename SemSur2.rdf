@@ -40551,7 +40551,7 @@ potential applications are discussed.</swrc:abstract>
         <semsur1:usesInformationAsset rdf:resource="http://purl.org/semsur/ACM"/>
         <semsur1:usesInformationAsset rdf:resource="http://purl.org/semsur/DBLP"/>
         <semsur1:usesInformationAsset rdf:resource="http://purl.org/semsur/IEEE"/>
-        <semsur1:hasExperimentSetup xml:lang="3.16ghz. we chose this small number of nodes to better illustrate avalanche’s query handling strategies, but did not measure its ability to scale.">We tested Avalanche using a five-node cluster. Each machine had 2GB RAM and an Intel Core 2 Duo E8500 </semsur1:hasExperimentSetup>
+        <semsur1:hasExperimentSetup xml:lang="en">We tested Avalanche using a five-node cluster. Each machine had 2GB RAM and an Intel Core 2 Duo E8500 </semsur1:hasExperimentSetup>
     </owl:NamedIndividual>
     
 
@@ -43803,7 +43803,7 @@ in most of VOID documents, we could not find a chance to execute comprehensive s
         <semsur1:hasConclusion>In this report, we have presented a brief description of Zhishi.links, an instance matching system. We have introduced the architecture of our system and specific techniques we used. Also, the results have been analyzed in detail and several guides for improvements have been proposed. We look forwards to build an instance matching system with better performance and higher stability in the future.</semsur1:hasConclusion>
         <semsur1:hasFutureWork>We look forwards to build an instance matching system with better performance and higher stability in the future.</semsur1:hasFutureWork>
         <semsur1:subject>Link Discovery</semsur1:subject>
-        <swrc:abstract xml:lang="oaei2011. in this report, we briefly describe the architecture and matching strategies of zhishi.links, followed by an analysis of the results">This report presents the results of Zhishi.links, a distributed instance matching system, for this year’s Ontology Alignment Evaluation Initiative (OAEI) campaign. We participate in Data Interlinking track (DI) of IM</swrc:abstract>
+        <swrc:abstract xml:lang="en">This report presents the results of Zhishi.links, a distributed instance matching system, for this year’s Ontology Alignment Evaluation Initiative (OAEI) campaign. We participate in Data Interlinking track (DI) of IM</swrc:abstract>
         <swrc:title>Zhishi.links Results for OAEI 2011</swrc:title>
         <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</swrc:year>
     </owl:NamedIndividual>
