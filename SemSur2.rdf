@@ -51,7 +51,9 @@
         <terms:title xml:lang="en">SemSur, Version 2.0</terms:title>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-11</terms:modified>
         <dc:creator xml:lang="en">Christoph Lange</dc:creator>
+        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">semsur</vann:preferredNamespacePrefix>
         <dc:creator xml:lang="en">Said Fathalla</dc:creator>
+        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">http://purl.org/SemSur/</vann:preferredNamespaceUri>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</owl:versionInfo>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-01-08</terms:issued>
         <dc:rights>Copyright 2018 </dc:rights>
