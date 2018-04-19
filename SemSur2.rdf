@@ -52,12 +52,11 @@
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-11</terms:modified>
         <dc:creator xml:lang="en">Christoph Lange</dc:creator>
         <dc:creator xml:lang="en">Said Fathalla</dc:creator>
-        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#date">SemSur, the Semantic Survey Ontology, is a core ontology for describing individual research problems, approaches, implementations and evaluations in a structured, comparable way.</dc:title>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</owl:versionInfo>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-01-08</terms:issued>
+        <dc:rights>Copyright 2018 </dc:rights>
+        <dc:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">SemSur, the Semantic Survey Ontology, is a core ontology for describing individual research problems, approaches, implementations and evaluations in a structured, comparable way.</dc:title>
         <dc:creator xml:lang="en">Soeren Auer</dc:creator>
-        <dc:rights>Copyright © 2011 </dc:rights>
- <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/> 
     </owl:Ontology>
     
 
@@ -864,6 +863,17 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/SemSur/usesInfoAsset -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/SemSur/usesInfoAsset">
+        <rdfs:domain rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+        <rdfs:domain rdf:resource="http://purl.org/spar/deo/Evaluation"/>
+        <rdfs:domain rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#Evaluation"/>
+        <rdfs:range rdf:resource="http://purl.org/semsur/InformationAsset"/>
+    </owl:ObjectProperty>
     
 
 
@@ -7641,17 +7651,6 @@
     <!-- http://usefulinc.com/ns/doap#vendor -->
 
     <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#vendor"/>
-    
-
-
-    <!-- http://purl.org/SemSur/usesInfoAsset -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/SemSur/usesInfoAsset">
-        <rdfs:domain rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
-        <rdfs:domain rdf:resource="http://purl.org/spar/deo/Evaluation"/>
-        <rdfs:domain rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#Evaluation"/>
-        <rdfs:range rdf:resource="http://purl.org/semsur/InformationAsset"/>
-    </owl:ObjectProperty>
     
 
 
@@ -39127,11 +39126,461 @@
         <semsur1:hasConclusion>In this paper we have presented the DataMaster Protégé plug-in, which allows a user to import schema structures and data from relational databases accessible through JDBC. We have presented the four ontologies that can be used to represent the database structure and the table data and finally we have given a short overview of the different import options available in the DataMaster plug-in.</semsur1:hasConclusion>
         <semsur1:subject>Bringing Relational Databases into the Semantic Web</semsur1:subject>
         <swrc:abstract>We present DataMaster, a Protégé plug-in that supports the importing of schema structure and data from relational databases into Protégé. The plug-in supports both OWL and frames-based ontologies and can be used with any relational database with JDBC/ODBC drivers.</swrc:abstract>
+        <dc:creator rdf:resource="http://purl.org/SemSur/Martin_O’Connor"/>
         <dc:creator rdf:resource="http://purl.org/semsur/Csongor_Nyulas"/>
         <dc:creator rdf:resource="http://purl.org/semsur/Samson_Tu"/>
-        <dc:creator rdf:resource="http://purl.org/SemSur/Martin_O’Connor"/>
         <swrc:title>DataMaster – a Plug-in for Importing Schemas and Data from Relational Databases into Protégé</swrc:title>
         <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2007</swrc:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/SemSur/ANAPSID:_An_Adaptive_Query_Processing_Engine_for_SPARQL_Endpoints -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/ANAPSID:_An_Adaptive_Query_Processing_Engine_for_SPARQL_Endpoints">
+        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/ANAPSID"/>
+        <swrc:publisher rdf:resource="http://purl.org/semsur/ISWC"/>
+        <semsur1:hasConclusion>We have defined ANAPSID, an adaptive query processing engine for RDF Linked Data accessible through SPARQL endpoints. ANAPSID provides a set of physical operators and an execution engine able to adapt the query execution to the availability of the endpoints and to hide delays from users. Reported experimental results suggest that our proposed techniques reduce execution times and are able to produce answers when other engines fail. Also, depending on the selectivity of the join operator and the data transfer delays, ANAPSID operators may overcome state-of-the-art Symmetric Hash Join operators. In the future we plan to extend ANAPSID with more powerful and lightweight operators like Eddy and MJoin, which are able to route received responses through different operators, and adapt the execution to unpredictable delays by changing the order in which each data item is routed.</semsur1:hasConclusion>
+        <semsur1:hasFutureWork>In the future we plan to extend ANAPSID with more powerful and lightweight operators like Eddy and MJoin, which are able to route received responses through different operators, and adapt the execution to unpredictable delays by changing the order in which each data item is routed.</semsur1:hasFutureWork>
+        <semsur1:subject>Querying Distributed RDF Data Sources</semsur1:subject>
+        <swrc:abstract>Following the design rules of Linked Data, the number of available SPARQL endpoints that support remote query processing is quickly growing; however, because of the lack of adaptivity, query executions may frequently be unsuccessful. First, fixed plans identified following the traditional optimize-then execute paradigm, may timeout as a consequence of endpoint availability. Second, because blocking operators are usually implemented, endpoint query engines are not able to incrementally produce results, and may become blocked if data sources stop sending data. We present ANAPSID, an adaptive query engine for SPARQL endpoints that adapts query execution schedulers to data availability and run-time conditions. ANAPSID provides physical SPARQL operators that detect when a source becomes blocked or data traÆc is bursty, and opportunistically, the operators produce results as quickly as data arrives from the sources. Additionally, ANAPSID operators implement main memory replacement policies to move previously computed matches to secondary memory avoiding duplicates. We compared ANAPSID performance with respect to RDF stores and endpoints, and observed that ANAPSID speeds up execution time, in some cases, in more than one order of magnitude.</swrc:abstract>
+        <dc:creator rdf:resource="http://purl.org/semsur/Edna_Ruckhaus"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Julio_Castillo"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Maria-Esther_Vidal"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Maribel_Acosta"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Tomas_Lampo"/>
+        <swrc:title>ANAPSID: An Adaptive Query Processing Engine for SPARQL Endpoints</swrc:title>
+        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</swrc:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/SemSur/ANAPSID:_evaluation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/ANAPSID:_evaluation">
+        <rdf:type rdf:resource="http://purl.org/spar/deo/Evaluation"/>
+        <semsur1:usesInformationAsset rdf:resource="http://purl.org/semsur/DBpedia"/>
+        <semsur1:hasExperimentSetup>Experiments were executed on a Linux CentOS machine with an Intel Pentium Core2 Duo 3.0 GHz and 8GB RAM. Experiments in RDF-3X were run in both cold and warm caches; to run cold cache</semsur1:hasExperimentSetup>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/SemSur/AgreementMaker:_Ecient_Matching_for_Large_Real-World_Schemas_and_Ontologies -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/AgreementMaker:_Ecient_Matching_for_Large_Real-World_Schemas_and_Ontologies">
+        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/AgreementMaker"/>
+        <swrc:publisher rdf:resource="http://purl.org/semsur/VLDB"/>
+        <semsur1:hasConclusion>Our demo focuses on the matching methods and evaluation strategies for determining the efficiency of ontology matching methods. Due to the tight integration of the evaluation strategies with the graphical user interface, a unique feature of our system, all the steps will be performed through the interface. Users will start by uploading their own ontologies, load our own, or download ontologies from the web, thus taking advantage of the several standard formats supported. Users can then explore the interface freely or follow a walk-through, consisting of browsing the ontologies, expanding and contracting nodes, and customizing the display. They have access to the information associated with each concept to be aligned, including descriptions, annotations, and (context) relations, and they can use them to visually detect mappings. The matching methods offer a brief description to help users in their selection. Users can manually set parameters like threshold or use default values. Once the mappings are defined, they will be able to interact with the results obtained, for example, to reduce the number of lines depicting the mappings. They can also edit the mappings that are automatically produced by the system, by adding, deleting, and updating mappings. Several matchings can be viewed and managed in parallel to directly detect overlaps and differences visually. Tuning the performance of the algorithms becomes an easy and quick task: for example, mappings can be iteratively improved by running second layer matchers, such as DSI after one of the base similarity methods. In the end, a nal set of mappings can be obtained using basic combination operations or an automatic quality composition of previous matchings. Users will also be able to store and inspect the mappings thus deffned. The system also provides a powerful framework for developers. Each matching method is implemented as a standard component which allows reuse and composition. A standard extensible API is defined to let developers plug and test new matching methods thus minimizing effort and maximizing reuse.</semsur1:hasConclusion>
+        <semsur1:subject>Link Discovery</semsur1:subject>
+        <dc:creator rdf:resource="http://purl.org/semsur/Cosmin_Stroe"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Flavio_Palandri_Antonelli"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Isabel_F._Cruz"/>
+        <swrc:title>AgreementMaker: Ecient Matching for Large Real-World Schemas and Ontologies</swrc:title>
+        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</swrc:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/SemSur/Avalanche:_Putting_the_spirit_of_the_web_back_into_semantic_web_querying -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/Avalanche:_Putting_the_spirit_of_the_web_back_into_semantic_web_querying">
+        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/Avalanche"/>
+        <swrc:publisher rdf:resource="http://purl.org/semsur/SSWS"/>
+        <semsur1:hasConclusion>In this paper we presented Avalanche , a novel approach for querying the Web of Data that (1) makes no assumptions about data distribution, availability, or partitioning, (2) provides up-to-date results, and (3) is flexible since it assumes nothing about the structure of participating triple stores. Specifically, we showed that Avalanche is able to execute non-trivial queries over distributed data-sources with an ex-ante unknown data-distribution. We showed two possible utility functions to guide the planning and execution over the distributed data-sources—the basic simple model and an extended model exploiting join estimation. We found that whilst the simple model found some results faster it did find less results than the extended model using the same stopping criteria. We believe that if we were to query huge information spaces the overhead of badly selected plans will be subdued by the better but slower plans of the extended utility function. To our knowledge, Avalanche is the first Semantic Web query system that makes no assumptions about the data distribution whatsoever. Whilst it is only a first implementation with a number of drawbacks it represents a first important towards bringing the spirit of the web back to triple-stores—a major condition to fulfill the vision of a truly global and open Semantic Web.</semsur1:hasConclusion>
+        <semsur1:hasFutureWork>The Avalanche system has shown how a completely heterogeneous distributed query engine that makes no assumptions about data distribution could be implemented. The current approach does have a number of limitations. In particular, we need to better understand the employed objective functions for the planner, investigate if the requirements put on participating triple-stores are reasonable, explore if Avalanche can be changed to a stateless model, and empirically evaluate if the approach truly scales to large number of hosts. Here we discuss each of these issues in turn. The core optimization of the Avalanche system lies in its cost and utility function. The basic utility function only considers possible joins with no information regarding the probability of the respective join. The proposed utility extension UE estimates the join probability of two highly selective molecules. Although this improves the accuracy of the objective function, its limitation to highly selective molecules is often impractical, as many queries (such as our example query) combine highly selective molecules with non-selective ones. Hence, we need to find a probabilistic distributed join cardinality estimation for low selectivity molecules. One approach might be the usage of bloom-filter caches to store precomputed, “popular” estimates. Another might be investigating sampling techniques for distributed join estimation. In order to support Avalanche existing triple-stores should be able to: – report statistics: cardinalities, bloom filters, other future extensions – support the execution of distributed joins (common in distributed databases), which could be delegated to an intermediary but would be inefficient – share the same key space (can be URIs but would result in bandwidth intensive joins and merges) Whilst these requirements seem simple we need to investigate how complex these extensions of triple-stores are in practice. Even better would be an extension of the SPARQL standard with the above-mentioned operations, which we will attempt to propose. The current Avalanche process assumes that hosts keep partial results throughout plan execution to reduce the cost of local database operations and that result-views are kept for the duration of a query. This limits the number of queries a host can handle. We intend to investigate if a stateless approach is feasible. Note that the simple approach—the use of REST-full services—may not be applicable as the size of the state (i.e., the partial results) may be huge and overburden the available bandwidth. We designed Avalanche with the need for high scalability in mind. The core idea follows the principle of decentralization. It also supports asynchrony using asynchronous HTTP requests to avoid blocking, autonomy by delegating the coordination and execution of the distributed join/update/merge operations to the hosts, concurrency through the pipeline shown in Figure 1, symmetry by allowing each endpoint to act as the initiating Avalanche node for a query caller, and fault tolerance through a number of time-outs and stopping conditions. Nonetheless, an empirical evaluation of Avalanche with a large number of hosts is still missing—a non-trivial shortcoming (due to the lack of suitable, partitioned datasets and the significant experimental complexity) we intend to address in the near future.</semsur1:hasFutureWork>
+        <semsur1:subject>Querying Distributed RDF Data Sources</semsur1:subject>
+        <swrc:abstract>Traditionally Semantic Web applications either included a web crawler or relied on external services to gain access to the Web of Data. Recent efforts have enabled applications to query the entire Semantic Web for up-to-date results. Such approaches are based on either centralized indexing of semantically annotated metadata or link traversal and URI dereferencing as in the case of Linked Open Data. By making limiting assumptions about the information space, they violate the openness principle of the Web – a key factor for its ongoing success. In this article we propose a technique called Avalanche, designed to allow a data surfer to query the Semantic Web transparently without making any prior assumptions about the distribution of the data – thus adhering to the openness criteria. Specifically, Avalanche can perform “live” (SPARQL) queries over the Web of Data. First, it gets on-line statistical information about the data distribution, as well as bandwidth availability. Then, it plans and executes the query in a distributed manner trying to quickly provide first answers. The main contribution of this paper is the presentation of this open and distributed SPARQL querying approach. Furthermore, we propose to extend the query planning algorithm with qualitative statistical information. We empirically evaluate Avalanche using a realistic dataset, show its strengths but also point out the challenges that still exist.</swrc:abstract>
+        <dc:creator rdf:resource="http://purl.org/semsur/Abraham_Bernstein"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Cosmin_Basca"/>
+        <swrc:title>Avalanche: Putting the Spirit of the Web back into Semantic Web Querying</swrc:title>
+        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</swrc:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/SemSur/Bringing_Relational_Databases_into_the_Semantic_Web:A_Survey -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/Bringing_Relational_Databases_into_the_Semantic_Web:A_Survey">
+        <rdf:type rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Publication"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swrc.ontoware.org/ontology#author"/>
+                <owl:allValuesFrom rdf:resource="http://swrc.ontoware.org/ontology#Person"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swrc.ontoware.org/ontology#cite"/>
+                <owl:allValuesFrom rdf:resource="http://swrc.ontoware.org/ontology#Publication"/>
+            </owl:Restriction>
+        </rdf:type>
+        <terms:description>Relational databases are considered one of the most popular storage solutions for various kinds of data and they have been recognized as a key factor in generating huge amounts of data for SemanticWeb applications. Ontologies, on the other hand, are one of the key concepts and main vehicle of knowledge in the Semantic Web research area. The problem of bridging the gap between relational databases and ontologies has attracted the interest of the SemanticWeb community, even from the early years of its existence and is commonly referred to as the database-to-ontology mapping problem. However, this term has been used interchangeably for referring to two distinct problems: namely, the creation of an ontology from an existing database instance and the discovery of mappings between an existing database instance and an existing ontology. In this paper, we clearly define these two problems and present the motivation, benefits, challenges and solutions for each one of them. We attempt to gather the most notable approaches proposed so far in the literature, present them concisely in tabular format and group them under a classification scheme. We finally explore the perspectives and future research steps for a seamless and meaningful integration of databases into the Semantic Web.</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/SemSur/Bringing_Relational_Databases_into_the_Semantic_Web:_A_Survey -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/Bringing_Relational_Databases_into_the_Semantic_Web:_A_Survey">
+        <rdf:type rdf:resource="http://purl.org/semsur/SurveyPaper"/>
+        <swrc:keywords>Relational Database, Ontology, Mapping, OWL, Survey</swrc:keywords>
+        <dc:creator rdf:resource="http://purl.org/semsur/Dimitrios-Emmanuel_Spanos"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Nikolas_Mitrou"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Periklis_Stavrou"/>
+        <terms:abstract>Relational databases are considered one of the most popular storage solutions for various kinds of data and they have been recognized as a key factor in generating huge amounts of data for SemanticWeb applications. Ontologies, on the other hand, are one of the key concepts and main vehicle of knowledge in the Semantic Web research area. The problem of bridging the gap between relational databases and ontologies has attracted the interest of the SemanticWeb community, even from the early years of its existence and is commonly referred to as the database-to-ontology mapping problem. However, this term has been used interchangeably for referring to two distinct problems: namely, the creation of an ontology from an existing database instance and the discovery of mappings between an existing database instance and an existing ontology. In this paper, we clearly define these two problems and present the motivation, benefits, challenges and solutions for each one of them. We attempt to gather the most notable approaches proposed so far in the literature, present them concisely in tabular format and group them under a classification scheme. We finally explore the perspectives and future research steps for a seamless and meaningful integration of databases into the Semantic Web.</terms:abstract>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/SemSur/Cross:_an_OWL_wrapper_for_teasoning_on_relational_databases -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/Cross:_an_OWL_wrapper_for_teasoning_on_relational_databases">
+        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/CROSS"/>
+        <swrc:publisher rdf:resource="http://purl.org/semsur/International_Conference_on_Conceptual_Modeling"/>
+        <semsur1:hasConclusion>In this paper, we have proposed the ODBC model, a formalization of relational databases focusing on their logic model. We have then presented a transformation of that model into OWL, a DL-based language designed for the Semantic Web. This transformation is implemented by the Cross open-source prototype, which effectively introduces the interesting notion of semantic values. We proved that the knowledge based produced by this transformation is consistent if and only if the source database state is weakly legal (i.e. legal but regarding foreign key constraints). Taking advantage of that result, we have shown how that transformation can prove useful for the purpose of analysing legacy RDBs, enhancing existing RDBs with additional constraints, and integrating them in the SW.</semsur1:hasConclusion>
+        <semsur1:hasFutureWork>A first direction for further work would be to try and strengthen the theorem, to have an equivalence of OWL consistency with full legality, i.e. taking into account foreign keys. This could actually be done by using an expressive feature of OWL (the oneOf constructor, not mentioned in this paper), but would possibly make the reasoning intractable. Another solution would be to propose, in a similar way to finite model reasoning, an algorithm of closed world reasoning which would not be allowed to create individuals. We also want to get more experimental results for the Cross implementation. Preliminary results are encouraging: the transformation of the schema of real database (127 tables, 869 columns, 132 unicity constraints, no foreign key) took around 1.5s; the resulting ontology was loaded in Pellet in about 9s, while reasoning took about 3s. Those results seem reasonable for a quite big schema. We now plan to experiment on the use cases presented in Section 6.3 with that database and a sample of other real databases.</semsur1:hasFutureWork>
+        <semsur1:subject>Bringing Relational Databases into the Semantic Web</semsur1:subject>
+        <swrc:abstract>One of the challenges of the Semantic Web is to integrate the huge amount of information already available on the standard Web, usually stored in relational databases. In this paper, we propose a formalization of a logic model of relational databases, and a transformation of that model into OWL, a Semantic Web language. This transformation is implemented in Cross, as an open-source prototype. We prove a relation between the notion of legal database state and the consistency of the corresponding OWL knowledge base. We then show how that transformation
+can prove useful to enhance databases, and integrate them in the Semantic Web.</swrc:abstract>
+        <dc:creator rdf:resource="http://purl.org/semsur/Geert-Jan_Houben"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Philippe_Thiran"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Pierre-Antoine_Champin"/>
+        <swrc:title>Cross: an OWL wrapper for teasoning on relational databases</swrc:title>
+        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2007</swrc:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/SemSur/D2RQ_–_Treating_Non-RDF_Databases_as_Virtual_RDF_Graphs -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/D2RQ_–_Treating_Non-RDF_Databases_as_Virtual_RDF_Graphs">
+        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/D2RQ"/>
+        <swrc:publisher rdf:resource="http://purl.org/SemSur/EDBT/ICDT_Workshops"/>
+        <semsur1:hasConclusion>D2RQ offers a flexible, easy-to-use access mechanism to non-RDF databases. It allows the integration of legazy databases into the data access architecture currently standardized by the W3C Data Access Working Group</semsur1:hasConclusion>
+        <semsur1:subject>Bringing Relational Databases into the Semantic Web</semsur1:subject>
+        <swrc:abstract>As Semantic Web technologies are getting mature, there is a growing need for RDF applications to access the content of huge, live, non-RDF, legacy databases without having to replicate the whole database into RDF. In this poster we present D2RQ, a declarative language to describe mappings between application-specific relational database schemata and RDF-S/OWL ontologies. D2RQ allows RDF applications to treat non-RDF relational databases as virtual RDF graphs, which can be queried using RDQL.</swrc:abstract>
+        <dc:creator rdf:resource="http://purl.org/semsur/Andy_Seaborne"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Christian_Bizer"/>
+        <swrc:title>D2RQ – Treating Non-RDF Databases as Virtual RDF Graphs</swrc:title>
+        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2004</swrc:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/SemSur/EDBT/ICDT_Workshops -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/EDBT/ICDT_Workshops">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <swrc:publishes rdf:resource="http://purl.org/SemSur/Updating_Relational_Data_via_SPARQL/Update"/>
+        <swrc:publishes rdf:resource="http://purl.org/semsur/Treating_Non-RDF_Databases_as_Virtual_RDF_Graphs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/SemSur/FedX:_a_federation_layer_for_distributed_query_processing_on_linked_open_data -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/FedX:_a_federation_layer_for_distributed_query_processing_on_linked_open_data">
+        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/FedX"/>
+        <swrc:publisher rdf:resource="http://purl.org/semsur/ISWC"/>
+        <semsur1:hasConclusion>In this paper, we proposed novel optimization techniques for efficient SPARQL query processing in the federated setting. As revealed by our benchmarks, bound joins combined with our grouping and source selection approaches are effective in terms of performance. By minimizing the number of intermediate requests, we are able to improve query performance significantly compared to state-of-the-art systems. We presented FedX, a practical solution that allows for querying multiple distributed Linked Data sources as if the data resides in a virtually integrated RDF graph. Compatible with the SPARQL 1.0 query language, our framework allows clients to integrate available SPARQL endpoints on-demand into a federation without any local preprocessing. While we focused on optimization techniques for conjunctive queries, namely basic graph patterns (BGPs), there is additional potential in developing novel, operator-specific optimization techniques for distributed settings (in particular for OPTIONAL queries), which we are planning to address in future work. As our experiments confirm, the optimization of BGPs alone (combined with common equivalent rewritings) already yields significant performance gains. Important features for federated query processing are the federation extensions proposed for the upcoming SPARQL 1.1 language definition. These allow to specify data sources directly within the query using the SERVICE operator, and moreover to attach mappings to the query as data using the BINDINGS operator. When implementing the SPARQL 1.1 federation extensions for our next release,FedX can exploit these language features to further improve performance. In fact, the SPARQL 1.1 SERVICE keyword is a trivial extension, which enhances our source selection approach with possibilities for manual specification of new sources and gives the query designer more control. Statistics can in uence performance tremendously in a distributed setting. Currently, FedX does not use any local statistics since we follow the design goal of on-demand federation setup. We aim at providing a federation framework, in which data sources can be integrated ad-hoc, and used immediately for query processing. In a future release, (remote) statistics (e.g., using VoID ) can be incorporated for source selection and to further improve our join order algorithm.</semsur1:hasConclusion>
+        <semsur1:hasFutureWork>While we focused on optimization techniques for conjunctive queries, namely basic graph patterns (BGPs), there is additional potential in developing novel, operator-specific optimization techniques for distributed settings (in particular for OPTIONAL queries), which we are planning to address in future work. In a future release, (remote) statistics (e.g., using VoID) can be incorporated for source selection and to further improve our join order algorithm.</semsur1:hasFutureWork>
+        <semsur1:subject>Querying Distributed RDF Data Sources</semsur1:subject>
+        <swrc:abstract>Motivated by the ongoing success of Linked Data and the growing amount of semantic data sources available on the Web, new challenges to query processing are emerging. Especially in distributed settings that require joining data provided by multiple sources, sophisticated optimization techniques are necessary for efficient query processing. We propose novel join processing and grouping techniques to minimize the number of remote requests, and develop an effective solution for source selection in the absence of preprocessed metadata. We present FedX, a practical framework that enables efficient SPARQL query processing on heterogeneous, virtually integrated Linked Data sources. In experiments, we demonstrate the practicability and efficiency of our framework on a set of real-world queries and data sources from the Linked Open Data cloud. With FedX we achieve a significant improvement in query performance over state-of-the-art federated query engines.</swrc:abstract>
+        <dc:creator rdf:resource="http://purl.org/semsur/Andreas_Schwarte"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Katja_Hose"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Michael_Schmidt"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Peter_Haase"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Ralf_Schenkel"/>
+        <swrc:title>FedX: Optimization Techniques for Federated Query Processing on Linked Data</swrc:title>
+        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</swrc:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/SemSur/KnoFuss:_A_Comprehensive_Architecture_for_Knowledge_Fusion -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/KnoFuss:_A_Comprehensive_Architecture_for_Knowledge_Fusion">
+        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/KnoFuss"/>
+        <swrc:publisher rdf:resource="http://purl.org/semsur/K-CAP"/>
+        <semsur1:subject>Link Discovery</semsur1:subject>
+        <swrc:abstract>We propose a knowledge fusion architecture KnoFuss based on the application of problem-solving methods technology, which allows methods for subtasks of the fusion process to be combined and the best methods to be selected, depending on the domain and task at hand.</swrc:abstract>
+        <dc:creator rdf:resource="http://purl.org/semsur/Andriy_Nikolov"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Enrico_Motta"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Victoria_Uren"/>
+        <swrc:title>KnoFuss: A Comprehensive Architecture for Knowledge Fusion</swrc:title>
+        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2007</swrc:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/SemSur/Knowledge_Graph_Refinement:_A_Survey_of_Approaches_and_Evaluation_Methods -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/Knowledge_Graph_Refinement:_A_Survey_of_Approaches_and_Evaluation_Methods">
+        <rdf:type rdf:resource="http://purl.org/semsur/SurveyPaper"/>
+        <semsur1:hasConclusion>In this paper, we have presented a survey on knowledge base refinement methods. We distinguish completion from error detection, and internal from external methods. We have shown that a larger body of works exist which apply different methods, ranging from techniques from the machine learning field to NLP related techniques. The survey has revealed that there are, at the moment, rarely any approaches which simultaneously try to improve completeness and correctness of knowledge graphs, and usually only address one target, such as type or relation assertions, or literal values. Holistic solutions which simultaneously improve the quality of knowledge graphs in many different aspects are currently not observed. Looking at the evaluation methods, the picture is quite diverse. Different methods are applied, using either the knowledge graph itself as a silver standard, using a partial gold standard, or performing a retrospective evaluation, are about equally distributed. Furthermore, approaches are often only evaluated on one specific knowledge graph. This makes it hard to compare approaches and make general statements on their relative performance.</semsur1:hasConclusion>
+        <semsur1:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Knowledge Graph Refinement: A Survey of Approaches and Evaluation Methods</semsur1:subject>
+        <swrc:abstract>In the recent years, different Web knowledge graphs, both free and commercial, have been created. While Google coined the term “Knowledge Graph” in 2012, there are also a few openly available knowledge graphs, with DBpedia, YAGO,
+and Freebase being among the most prominent ones. Those graphs are often constructed from semi-structured knowledge, such as Wikipedia, or harvested from the web with a combination of statistical and linguistic methods. The result are large-scale knowledge graphs that try to make a good trade-off between completeness and correctness. In order to further increase the utility of such knowledge graphs, various refinement methods have been proposed, which try to infer and add missing knowledge to the graph, or identify erroneous pieces of information. In this article, we provide a survey of such knowledge graph refinement approaches, with a dual look at both the methods being proposed as well as the evaluation methodologies used.</swrc:abstract>
+        <swrc:keywords>Knowledge Graphs, Refinement, Completion, Correction, Error Detection, Evaluation</swrc:keywords>
+        <dc:creator rdf:resource="http://purl.org/semsur/Heiko_Paulheim"/>
+        <terms:abstract>In the recent years, different Web knowledge graphs, both free and commercial, have been created. While Google coined the term “Knowledge Graph” in 2012, there are also a few openly available knowledge graphs, with DBpedia, YAGO, and Freebase being among the most prominent ones. Those graphs are often constructed from semi-structured knowledge, such as Wikipedia, or harvested from the web with a combination of statistical and linguistic methods. The result are large-scale knowledge graphs that try to make a good trade-off between completeness and correctness. In order to further increase the utility of such knowledge graphs, various refinement methods have been proposed, which try to infer and add missing knowledge to the graph, or identify erroneous pieces of information. In this article, we provide a survey of such knowledge graph refinement approaches, with a dual look at both the methods being proposed as well as the evaluation methodologies used.</terms:abstract>
+        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</swrc:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/SemSur/Linked_hypernyms:_Enriching_DBpedia_with_Targeted_Hypernym_Discovery -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/Linked_hypernyms:_Enriching_DBpedia_with_Targeted_Hypernym_Discovery">
+        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
+        <swrc:keywords>DBpedia
+Hearst patterns
+Hypernym
+Linked data
+YAGO
+Wikipedia
+Type inference</swrc:keywords>
+        <dc:creator rdf:resource="http://purl.org/semsur/Tomáš_Kliegr"/>
+        <terms:abstract>The Linked Hypernyms Dataset (LHD) provides entities described by Dutch, English and German
+Wikipedia articles with types in the DBpedia namespace. The types are extracted from the first sentences
+of Wikipedia articles using Hearst pattern matching over part-of-speech annotated text and disambiguated
+to DBpedia concepts. The dataset covers 1.3 million RDF type triples from English Wikipedia,
+out of which 1 million RDF type triples were found not to overlap with DBpedia, and 0.4 million with
+YAGO2s. There are about 770 thousand German and 650 thousand Dutch Wikipedia entities assigned a
+novel type, which exceeds the number of entities in the localized DBpedia for the respective language. RDF
+type triples from the German dataset have been incorporated to the German DBpedia. Quality assessment
+was performed altogether based on 16.500 human ratings and annotations. For the English dataset, the
+average accuracy is 0.86, for German 0.77 and for Dutch 0.88. The accuracy of raw plain text hypernyms
+exceeds 0.90 for all languages. The LHD release described and evaluated in this article targets DBpedia 3.8,
+LHD version for the DBpedia 3.9 containing approximately 4.5 million RDF type triples is also available.</terms:abstract>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/SemSur/LogMap:Logic-based_and_Scalable_Ontology_Matching -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/LogMap:Logic-based_and_Scalable_Ontology_Matching">
+        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/LogMap"/>
+        <swrc:publisher rdf:resource="http://purl.org/semsur/ISWC"/>
+        <semsur1:hasConclusion>In this paper, we have presented LogMap|a highly scalable ontology matching tool with built-in reasoning and diagnosis capabilities. LogMap&apos;s features and scalability behaviour make it well-suited for matching large-scale ontologies. LogMap, however, is still an early-stage prototype and there is plenty of room for improvement. We are currently working on further optimisations, and in the near future we are planning to integrate LogMap with a Protege-based front-end, such as the one implemented in our tool ContentMap</semsur1:hasConclusion>
+        <semsur1:hasFutureWork>In this paper, we have presented LogMap|a highly scalable ontology matching tool with built-in reasoning and diagnosis capabilities. LogMap&apos;s features and scalability behaviour make it well-suited for matching large-scale ontologies. LogMap, however, is still an early-stage prototype and there is plenty of room for improvement. We are currently working on further optimisations, and in the near future we are planning to integrate LogMap with a Protege-based front-end, such as the one implemented in our tool ContentMap</semsur1:hasFutureWork>
+        <semsur1:subject>Link Discovery</semsur1:subject>
+        <swrc:abstract>In this paper, we present LogMap|a highly scalable ontology matching system with `built-in&apos; reasoning and diagnosis capabilities. To the best of our knowledge, LogMap is the only matching system that can deal with semantically rich ontologies containing tens (and even hundreds) of thousands of classes. In contrast to most existing tools, LogMap also implements algorithms for `on they&apos; unsatisfiability detection and repair. Our experiments with the ontologies NCI, FMA and SNOMED CT conrm that our system can effciently match even the largest existing bio-medical ontologies. Furthermore, LogMap is able to produce a `clean&apos; set of output mappings in many cases, in the sense that the ontology obtained by integrating LogMap&apos;s output mappings with the input ontologies is consistent and does not contain unsatisfiable classes.</swrc:abstract>
+        <dc:creator rdf:resource="http://purl.org/semsur/Bernardo_Cuenca_Grau"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Ernesto_Jimenez-Ruiz"/>
+        <swrc:title>LogMap:Logic-based and Scalable Ontology Matching</swrc:title>
+        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</swrc:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/SemSur/OWLED_Workshop_on_OWL:_Experiences_and_Directions -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/OWLED_Workshop_on_OWL:_Experiences_and_Directions">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/SemSur/Querying_over_Federated_SPARQL_Endpoints_—A_State_of_the_Art_Survey -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/Querying_over_Federated_SPARQL_Endpoints_—A_State_of_the_Art_Survey">
+        <rdf:type rdf:resource="http://purl.org/semsur/SurveyPaper"/>
+        <semsur1:hasConclusion>In this work, we have presented a list of federation frameworks over SPARQL Endpoints along with their features. According to this list, the user can have considerations to choose the suitable federation framework for their case. We have classified those framework into three categories: i) framework interprets SPARQL 1.1 query to execute federation SPARQL query covering VALUES and SERVICE operator; ii) framework handles SPARQL 1.0 query and has responsibility to find relevant source for a query and join incoming result from SPARQL Endpoints; and iii) framework accepts SPARQL 1.0 and translate the incoming query to SPARQL 1.1 format.</semsur1:hasConclusion>
+        <swrc:keywords>Federation, SPARQL, RDF, Linked Data</swrc:keywords>
+        <dc:creator rdf:resource="http://purl.org/semsur/Ali_Hasnain"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Jurgen_Umbrich"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Marcel_Karnstedt"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Michael_Hausenblas"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Nur_Aini_Rakhmawati"/>
+        <terms:abstract>The increasing amount of Linked Data and its inherent distributed nature have
+attracted significant attention throughout the research community and amongst practitioners to search data, in the past years. Inspired by research results from traditional distributed databases, dierent approaches for managing federation over SPARQL Endpoints have been introduced. SPARQL is the standardised query language for RDF, the default data model used in Linked Data deployments and SPARQL Endpoints are a popular access mechanism provided by many Linked Open Data (LOD) repositories. In this paper, we initially give an overview of the federation framework infrastructure and then proceed with a comparison of existing SPARQL federation frameworks. Finally, we highlight shortcomings in existing frameworks, which we hope helps spawning new research directions.</terms:abstract>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/SemSur/RDB2ONT:_A_Tool_for_Generating_OWL_Ontologies_From_Relational_Database_Systems -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/RDB2ONT:_A_Tool_for_Generating_OWL_Ontologies_From_Relational_Database_Systems">
+        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/RDB2ONT"/>
+        <swrc:publisher rdf:resource="http://purl.org/semsur/AICTICIW"/>
+        <semsur1:hasConclusion>In this paper, an algorithm and tool for generating OWL ontologies from relational database systems is presented. The tool, RDB2ONT, helps the domain experts to quickly generate and publish OWL ontologies describing the underlying relational database systems while preserving their structural constraints. The generated ontologies are constructed using a set of vocabularies and structures defined in schema that describes relational database systems on the web so they guarantees that user applications can work with data instances that conformed to a set of known vocabularies and structures. The generated ontologies provide a standardized and meaningful way for describing the underlying relational database systems so they “bridge” the semantic gaps between the ontologies describing relational database systems and/or the ontologies describing other data sources on the web such as flat-files, semi-structures, etc. Concepts in OWL ontologies can be defined at multiple levels of granularities thus the generated OWL ontologies can be used to address the semantic heterogeneity problem at multiple levels. Evolutions of database systems in large-scale environments are inevitable so by using the RDB2ONT tool, OWL ontologies can be re-generated with little effort from the domain experts thus speed up the process of facilitating data in the underlying relational database systems with other data sources on the web.</semsur1:hasConclusion>
+        <semsur1:hasFutureWork>Although the generated OWL ontologies provide the explicit meaning of concepts and their semantic relationships between related concepts, there are still many open research questions that need to be addressed. One of the questions is how to merge the generated OWL ontologies into an integrated OWL ontology so that common views of concepts can be achieved? This would allow users to pose queries on the common views of concepts rather than the concepts defined in the individual ontologies. Merging OWL ontologies will also require the resolution of the structural differences between OWL ontologies. Another question is how can existing OWL ontology inference engines such as Jena 2 or Pellet can be used to infer the semantic relationships between concepts defined in multiple OWL ontologies at multiple levels of granularities? The result of this research is important since it would enable users to combine related data from multiple data sources at multiple levels of granularities. In the real world, different organizations are likely to use different data models, thus tools for generating OWL ontologies automatically and dynamically from other data models (e.g., flat-files, object-oriented, etc.) are also needed. As mentioned previously, having different OWL ontologies describing different data models will allow users to relate semantically related data in different data models together thus enabling these different data sources to interoperate with each other semantically.</semsur1:hasFutureWork>
+        <semsur1:subject>Bringing Relational Databases into the Semantic Web</semsur1:subject>
+        <swrc:abstract>This paper describes a framework that uses the Semantic Web infrastructure to address semantic interoperability between relational database systems in large-scale environments and at multiple levels of granularities. Given a relational database system, we describe a formal algorithm to use the relational database Rs meta-data and structural constraints to construct its OWL ontology while preserving the structural constraints of the underlying relational database system. The generated ontology is described using and conforming to a set of vocabularies defined in an ontology that describes relational database systems on the web. Using this set of vocabularies guarantee that applications on the web can work with data instances that conformed to a set of known vocabularies and structures. Finally, we describe our prototype and how semantic conflicts are resolved between multiple relational database systems using the generated ontologies</swrc:abstract>
+        <dc:creator rdf:resource="http://purl.org/semsur/Ken_Barker"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Quang_Trinh"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Reda_Alhajj"/>
+        <swrc:title>RDB2ONT: A Tool for Generating OWL Ontologies From Relational Database Systems</swrc:title>
+        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2006</swrc:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/SemSur/Runtime_optimization/Blocking -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/Runtime_optimization/Blocking">
+        <rdf:type rdf:resource="http://purl.org/semsur/Problem"/>
+        <rdf:type rdf:resource="http://purl.org/semsur/ProblemSolution"/>
+        <semsur1:hasSolution rdf:resource="http://purl.org/semsur/multi-dimensional"/>
+        <semsur1:isSubproblem rdf:resource="http://purl.org/semsur/Link_Discovery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/SemSur/Runtime_optimization/Filtering -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/Runtime_optimization/Filtering">
+        <rdf:type rdf:resource="http://purl.org/semsur/Problem"/>
+        <rdf:type rdf:resource="http://purl.org/semsur/ProblemSolution"/>
+        <semsur1:hasSolution rdf:resource="http://purl.org/semsur/indexing"/>
+        <semsur1:isSubproblem rdf:resource="http://purl.org/semsur/Link_Discovery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/SemSur/SERIMI_-_Resource_Description_Similarity,_RDF_Instance_Matching_and_Interlinking. -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/SERIMI_-_Resource_Description_Similarity,_RDF_Instance_Matching_and_Interlinking.">
+        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/SERIMI"/>
+        <swrc:publisher rdf:resource="http://purl.org/semsur/International_Workshop_on_Ontology_Matching"/>
+        <semsur1:hasConclusion>RDF instance matching in the context of interlinking RDF datasets published in the Linked Data Cloud is the task of determining if two resources are referred to the same entity in the real world. This is a challenging task in high demand by data publishers that wish to interlink their datasets in the cloud. In this work, we propose a novel approach, called SERIMI, for solving the RDF instance-matching problem automatically. SERIMI matches instances between a source and target datasets, without prior knowledge of the data, domain or schema of these datasets. It does so by approximating the notion of similarity by pairing instances based on entity labels as well as structural (ontological) context. As part of the SERIMI approach, we proposed the CRDS function to approximate that judgment of similarity. We used two collections proposed by the OAEI 2010 initiative to evaluate SERIMI. On average, SERIMI outperforms two representative systems, RiMOM and ObjectCoref, which tried to solve the same problem using the same collections and reference alignment, in 70% of the cases.</semsur1:hasConclusion>
+        <semsur1:hasFutureWork>As future work, we intend to investigate how our model can be adjusted to consider partial string matching in the similarity function that we proposed, and to accommodate different score distribution metrics as the threshold for the parameter δthreshold. Also, we intend to evaluate this approach in different collections that may provide a more accurate reference alignment than the ones that we used in this work.</semsur1:hasFutureWork>
+        <semsur1:subject>Link Discovery</semsur1:subject>
+        <swrc:abstract>The interlinking of datasets published in the Linked Data Cloud is a challenging problem and a key factor for the success of the Semantic Web. Manual rule-based methods are the most effective solution for the problem, but they require skilled human data publishers going through a laborious, error prone and time-consuming process for manually describing rules mapping instances between two datasets. Thus, an automatic approach for solving this problem is more than welcome. In this paper, we propose a novel interlinking method, SERIMI, for solving this problem automatically. SERIMI matches instances between a source and a target datasets, without prior knowledge of the data, domain or schema of these datasets. Experiments conducted with benchmark collections demonstrate that our approach considerably outperforms state-of-the-art automatic approaches for solving the interlinking problem on the Linked Data Cloud.</swrc:abstract>
+        <dc:creator rdf:resource="http://purl.org/semsur/Arjen_P._de_Vries"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Daniel_Schwabe"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Jan_Hidders"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Samur_Araujo"/>
+        <swrc:title>SERIMI - Resource Description Similarity, RDF Instance Matching and Interlinking.</swrc:title>
+        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</swrc:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/SemSur/SLINT:_A_Schema-Independent_Linked_Data_Interlinking_System -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/SLINT:_A_Schema-Independent_Linked_Data_Interlinking_System">
+        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/SLINT"/>
+        <swrc:publisher rdf:resource="http://purl.org/semsur/International_Workshop_on_Ontology_Matching"/>
+        <semsur1:hasConclusion>In this paper, we present SLINT, an efficient schema-independent linked data interlinking system. We select important predicates by predicate’s coverage and discriminability. The predicate alignments are constructed and filtered for obtaining key alignments.We implement an adaptive filtering technique to produce candidates and identities. Compare with the most recent systems, SLINT highly outperforms the precision and recall in interlinking. The performance of SLINT is also very high when it takes around 1 minute to detect more than 13,000 identity pairs. Although SLINT has good result on tested datasets, it is not sufficient to evaluate the scalability of our system, which we consider as the current limiting point because of the used of weighted co-occurrence matrix. We will investigate about a solution for this issue in our next work. Besides, we also interested in automatic configuration for every threshold used in SLINT and improving SLINT into a novel cross-domain interlinking system.</semsur1:hasConclusion>
+        <semsur1:subject>Link Discovery</semsur1:subject>
+        <swrc:abstract>Linked data interlinking is the discovery of all instances that represent the same real-world object and locate in different data sources. Since different data publishers frequently use different schemas for storing resources, we aim at developing a schema-independent interlinking system. Our system automatically selects important predicates and useful predicate alignments, which are used as the key for blocking and instance matching. The key distinction of our system is the use of weighted co-occurrence and adaptive filtering in blocking and instance matching. Experimental results show that the system highly improves the precision and recall over some recent ones. The performance of the system and the efficiency of main steps are also discussed.</swrc:abstract>
+        <dc:creator rdf:resource="http://purl.org/semsur/Bac_Le"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Khai_Nguyen"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Ryutaro_Ichise"/>
+        <swrc:title>SLINT: A Schema-Independent Linked Data Interlinking System</swrc:title>
+        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2012</swrc:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/SemSur/SPLENDID:_SPARQL_Endpoint_Federation_Exploiting_VOID_Descriptions -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/SPLENDID:_SPARQL_Endpoint_Federation_Exploiting_VOID_Descriptions">
+        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/Splendid"/>
+        <swrc:publisher rdf:resource="http://purl.org/semsur/International_Conference_on_Consuming_Linked_Data"/>
+        <semsur1:hasConclusion>SPLENDID allows for transparent query federation over distributed SPARQL endpoints. In order to achieve a good query execution performance, data source selection and query optimization is based on basic statistical information which is obtained from VOID descriptions. The utilization of open semantic web standards, like VOID and SPARQL endpoints, allows for flexible integration of various distributed and linked RDF data sources. We have described in detail the implementation of the data source selection and the join order optimization. The evaluation shows that our approach can achieve good query performance and is competitive compared to other state-of-the-art federation implementations. In our analysis of the source selection we came to the conclusion that at least predicate and type statistics should be included in VOID description for RDF datasets. The use of 3rd party sameAs links, however, can significantly increase the number of requests and thus, hamper the efficiency of query execution plans. The comparison of the two employed physical join implementations has shown that the network overhead plays an important role. Both hash join and bind join can significantly reduce the query processing time for certain types of queries. With SPLENDID we also like to advocate the adoption of VOID statistics for Linked Data.
+As next steps, we plan to investigate whether VOID descriptions can easily be extended with more detailed statistics in order to allow for more accurate cardinality estimates and, thus, better query execution plans. On the other hand, the actual query execution has not yet been optimized in SPLENDID. Therefore, we plan to integrate optimization techniques as used in FedX. Moreover, the adoption of the SPARQL 1.1 federation extension will also allow for more efficient query execution.</semsur1:hasConclusion>
+        <semsur1:hasFutureWork>As next steps, we plan to investigate whether VOID descriptions can easily be extended with more detailed statistics in order to allow for more accurate cardinality estimates and, thus, better query execution plans. On the other hand, the actual query execution has not yet been optimized in SPLENDID. Therefore, we plan to integrate optimization techniques as used in FedX. Moreover, the adoption of the SPARQL 1.1 federation extension will also allow for more efficient query execution.</semsur1:hasFutureWork>
+        <semsur1:subject>Querying Distributed RDF Data Sources</semsur1:subject>
+        <swrc:abstract>In order to leverage the full potential of the Semantic Web it is necessary to transparently query distributed RDF data sources in the same way as it has been possible with federated databases for ages. However, there are significant differences between the Web of (linked) Data and the traditional database approaches. Hence, it is not straightforward to adapt successful database techniques for RDF federation. Reasons are the missing cooperation between SPARQL endpoints and the need for detailed data statistics for estimating the costs of query execution plans. We have implemented SPLENDID, a query optimization strategy for federating SPARQL endpoints based on statistical data obtained from voiD descriptions.</swrc:abstract>
+        <dc:creator rdf:resource="http://purl.org/semsur/Olaf_Gorlitz"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Steffen_Staab"/>
+        <swrc:title>SPLENDID: SPARQL Endpoint Federation Exploiting VOID Descriptions</swrc:title>
+        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</swrc:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/SemSur/The_Semantic_Web:_Research_and_Applications -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/The_Semantic_Web:_Research_and_Applications">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/SemSur/Unveiling_the_hidden_bride:_deep_annotation_for_mapping_and_migrating_legacy_data_to_the_Semantic_Web -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/Unveiling_the_hidden_bride:_deep_annotation_for_mapping_and_migrating_legacy_data_to_the_Semantic_Web">
+        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/OntoMat-Reverse"/>
+        <swrc:publisher rdf:resource="http://purl.org/semsur/Journal_of_web_semantics"/>
+        <semsur1:hasConclusion>In this paper, we have described deep annotation, an original framework to provide semantic annotation for large sets of data. Deep annotation leaves semantic data where it can be handled best, viz. in database systems. Thus, deep annotation provides a means for mapping and reusing dynamic data in the Semantic
+Web with tools that are comparatively simple and intuitive to use. To attain this objective we have defined a deep annotation process and the appropriate architecture. We have incorporated the means for server side markup that allows the user to define semantic mappings by using OntoMat-Annotizer to create Web presentation-based annotations12 and OntoMat-Reverse to create schema-based annotations. An ontology and mapping editor and an inference engine are then used to investigate and exploit the resulting descriptions either for querying the database content or to materialize the content into RDF files. In total, we have provided a complete framework and its prototype implementation for deep annotation.</semsur1:hasConclusion>
+        <semsur1:hasFutureWork>For the future, there is a long list of open issues concerning deep annotation—from the more mundane, though important, ones (top) to far-reaching ones (bottom): (1) Granularity: So far we have only considered atomic database fields. For instance, one may find a string “Proceedings of the Eleventh International World Wide Web Conference, WWW2002, Honolulu, Hawaii, USA, 7–11 May 2002.” as the title of a book whereas one might rather be interested in separating this field into title, location, and date. (2) Automatic derivation of server-side Web page markup: A content management system like Zope could provide the means for automatically deriving server-side Web page markup for deep annotation. Thus, the database provider could be freed from any workload, while allowing for participation in the Semantic Web. Some steps in this direction are currently being pursued in the KAON CMS, which is based on Zope. (3) Other information structures: For now, we have built our deep annotation process on SQL and relational databases. Future schemes could exploit Xquery or an ontology-based query language. (4) Interlinkage: In the future deep annotations may even link to each other, creating a dynamic interconnected Semantic Web that allows translation between different servers. (5) Opening the possibility to directly query the database, certainly creates problems such as new possibilities for denial of service attacks. In fact, queries, e.g. ones that involve too many joins over large tables, may prove hazardous. Nevertheless, we see this rather as a challenge to be solved by clever schemes for CPU processing time (with the possibility that queries are not answered because the time allotted for one query to one user is up) than for a complete “no go.” We believe that these options make deep annotation a rather intriguing scheme on which a considerable part of the Semantic Web might be built.</semsur1:hasFutureWork>
+        <semsur1:subject>Bringing Relational Databases into the Semantic Web</semsur1:subject>
+        <swrc:abstract>The success of the Semantic Web crucially depends on the easy creation, integration, and use of semantic data. For this purpose, we consider an integration scenario that defies core assumptions of current metadata construction methods. We describe a framework of metadata creation where Web pages are generated from a database and the database owner is cooperatively participating in the Semantic Web.  This leads us to the deep annotation of the database—directly by annotation of the logical database schema or indirectly by annotation of the Web presentation generated from the database contents. From this annotation, one may execute data mapping and/or migration steps, and thus prepare the data for use in the Semantic Web. We consider deep annotation as particularly valid because: (i) dynamic Web pages generated from databases outnumber static Web pages, (ii) deep annotation may be a very intuitive way to create semantic data from a database, and (iii) data from databases should remain where it can be handled most efficiently—in its databases. Interested users can then query this data directly or choose to materialize the data as RDF files.</swrc:abstract>
+        <dc:creator rdf:resource="http://purl.org/semsur/Ljiljana_Stojanovic"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Nenad_Stojanovic"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Raphael_Volz"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Siegfried_Handschuh"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Steffen_Staab"/>
+        <swrc:title>Unveiling the hidden bride: deep annotation for mapping and migrating legacy data to the Semantic Web</swrc:title>
+        <swrc:year>Bringing Relational Databases into the Semantic Web</swrc:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/SemSur/Updating_Relational_Data_via_SPARQL/Update -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/Updating_Relational_Data_via_SPARQL/Update">
+        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
+        <rdf:type rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
+        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Publication"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swrc.ontoware.org/ontology#author"/>
+                <owl:allValuesFrom rdf:resource="http://swrc.ontoware.org/ontology#Person"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://swrc.ontoware.org/ontology#cite"/>
+                <owl:allValuesFrom rdf:resource="http://swrc.ontoware.org/ontology#Publication"/>
+            </owl:Restriction>
+        </rdf:type>
+        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/R3M"/>
+        <swrc:publisher rdf:resource="http://purl.org/SemSur/EDBT/ICDT_Workshops"/>
+        <semsur1:hasFutureWork>Future work is planned for various aspects of OntoAccess. Further research needs to be done on bridging the conceptual gap between RDBs and the Semantic Web. Ontology-based write access to the relational data creates completely new challenges on this topic with respect to read-only approaches. The presence of schema constraints in the database can lead to the rejection of update requests that would otherwise be accepted by a native triple store. A feedback protocol that provides semantically rich information about the cause of a rejection and possible directions for improvement plays a major role in bridging the gap. Other database constraints such as assertions have to be evaluated as well to see if they can reasonably be supported in the mapping. Also, a more formal definition of the mapping language will be provided. Furthermore, we will extend our prototype implementation to support the SPARQL/Update MODIFY operation, SPARQL queries, and the just mentioned feedback protocol.</semsur1:hasFutureWork>
+        <semsur1:hasFutureWork>In this paper, we presented our approach OntoAccess that enables the manipulation of relational data via SPARQL/Update. We introduced the update-aware RDB to RDF mapping language R3M that captures additional information about the database schema, in particular about integrity constraints. This information enables the detection of update requests that are invalid from the RDB perspective. Such requests cannot be executed by the database engine as they would violate integrity constraints of the database schema. The information can also be exploited to provide semantically rich feedback to the client. Therefore, the causes for the rejection of a request and possible directions for improvement can be reported in an appropriate format.</semsur1:hasFutureWork>
+        <semsur1:subject>Bringing Relational Databases into the Semantic Web</semsur1:subject>
+        <swrc:abstract>Relational Databases are used in most current enterprise environments to store and manage data. The semantics of the data is not explicitly encoded in the relational model, but implicitly on the application level. Ontologies and Semantic Web technologies provide explicit semantics that allows data to be shared and reused across application, enterprise, and community boundaries. Converting all relational data to RDF is often not feasible, therefore we adopt an ontology-based access to relational databases. While existing approaches focus on read-only access, we present our approach OntoAccess that adds ontology-based write access to relational data. OntoAccess consists of the update-aware RDB to RDF mapping language R3M and algorithms for translating SPARQL/Update operations to SQL. This paper presents the mapping language, the translation algorithms, and a prototype implementation of OntoAccess.</swrc:abstract>
+        <dc:creator rdf:resource="http://purl.org/semsur/Gerald_Reif"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Harald_C._Gall"/>
+        <dc:creator rdf:resource="http://purl.org/semsur/Matthias_Hert"/>
+        <swrc:title>Updating Relational Data via SPARQL/Update</swrc:title>
+        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</swrc:year>
     </owl:NamedIndividual>
     
 
@@ -44281,456 +44730,6 @@ in most of VOID documents, we could not find a chance to execute comprehensive s
                 <owl:allValuesFrom rdf:resource="http://purl.org/spar/fabio/DigitalItem"/>
             </owl:Restriction>
         </rdf:type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/SemSur/ANAPSID:_An_Adaptive_Query_Processing_Engine_for_SPARQL_Endpoints -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/ANAPSID:_An_Adaptive_Query_Processing_Engine_for_SPARQL_Endpoints">
-        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
-        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
-        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/ANAPSID"/>
-        <swrc:publisher rdf:resource="http://purl.org/semsur/ISWC"/>
-        <semsur1:hasConclusion>We have defined ANAPSID, an adaptive query processing engine for RDF Linked Data accessible through SPARQL endpoints. ANAPSID provides a set of physical operators and an execution engine able to adapt the query execution to the availability of the endpoints and to hide delays from users. Reported experimental results suggest that our proposed techniques reduce execution times and are able to produce answers when other engines fail. Also, depending on the selectivity of the join operator and the data transfer delays, ANAPSID operators may overcome state-of-the-art Symmetric Hash Join operators. In the future we plan to extend ANAPSID with more powerful and lightweight operators like Eddy and MJoin, which are able to route received responses through different operators, and adapt the execution to unpredictable delays by changing the order in which each data item is routed.</semsur1:hasConclusion>
-        <semsur1:hasFutureWork>In the future we plan to extend ANAPSID with more powerful and lightweight operators like Eddy and MJoin, which are able to route received responses through different operators, and adapt the execution to unpredictable delays by changing the order in which each data item is routed.</semsur1:hasFutureWork>
-        <semsur1:subject>Querying Distributed RDF Data Sources</semsur1:subject>
-        <swrc:abstract>Following the design rules of Linked Data, the number of available SPARQL endpoints that support remote query processing is quickly growing; however, because of the lack of adaptivity, query executions may frequently be unsuccessful. First, fixed plans identified following the traditional optimize-then execute paradigm, may timeout as a consequence of endpoint availability. Second, because blocking operators are usually implemented, endpoint query engines are not able to incrementally produce results, and may become blocked if data sources stop sending data. We present ANAPSID, an adaptive query engine for SPARQL endpoints that adapts query execution schedulers to data availability and run-time conditions. ANAPSID provides physical SPARQL operators that detect when a source becomes blocked or data traÆc is bursty, and opportunistically, the operators produce results as quickly as data arrives from the sources. Additionally, ANAPSID operators implement main memory replacement policies to move previously computed matches to secondary memory avoiding duplicates. We compared ANAPSID performance with respect to RDF stores and endpoints, and observed that ANAPSID speeds up execution time, in some cases, in more than one order of magnitude.</swrc:abstract>
-        <dc:creator rdf:resource="http://purl.org/semsur/Edna_Ruckhaus"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Julio_Castillo"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Maria-Esther_Vidal"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Maribel_Acosta"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Tomas_Lampo"/>
-        <swrc:title>ANAPSID: An Adaptive Query Processing Engine for SPARQL Endpoints</swrc:title>
-        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</swrc:year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/SemSur/ANAPSID:_evaluation -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/ANAPSID:_evaluation">
-        <rdf:type rdf:resource="http://purl.org/spar/deo/Evaluation"/>
-        <semsur1:usesInformationAsset rdf:resource="http://purl.org/semsur/DBpedia"/>
-        <semsur1:hasExperimentSetup>Experiments were executed on a Linux CentOS machine with an Intel Pentium Core2 Duo 3.0 GHz and 8GB RAM. Experiments in RDF-3X were run in both cold and warm caches; to run cold cache</semsur1:hasExperimentSetup>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/SemSur/AgreementMaker:_Ecient_Matching_for_Large_Real-World_Schemas_and_Ontologies -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/AgreementMaker:_Ecient_Matching_for_Large_Real-World_Schemas_and_Ontologies">
-        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
-        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
-        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/AgreementMaker"/>
-        <swrc:publisher rdf:resource="http://purl.org/semsur/VLDB"/>
-        <semsur1:hasConclusion>Our demo focuses on the matching methods and evaluation strategies for determining the efficiency of ontology matching methods. Due to the tight integration of the evaluation strategies with the graphical user interface, a unique feature of our system, all the steps will be performed through the interface. Users will start by uploading their own ontologies, load our own, or download ontologies from the web, thus taking advantage of the several standard formats supported. Users can then explore the interface freely or follow a walk-through, consisting of browsing the ontologies, expanding and contracting nodes, and customizing the display. They have access to the information associated with each concept to be aligned, including descriptions, annotations, and (context) relations, and they can use them to visually detect mappings. The matching methods offer a brief description to help users in their selection. Users can manually set parameters like threshold or use default values. Once the mappings are defined, they will be able to interact with the results obtained, for example, to reduce the number of lines depicting the mappings. They can also edit the mappings that are automatically produced by the system, by adding, deleting, and updating mappings. Several matchings can be viewed and managed in parallel to directly detect overlaps and differences visually. Tuning the performance of the algorithms becomes an easy and quick task: for example, mappings can be iteratively improved by running second layer matchers, such as DSI after one of the base similarity methods. In the end, a nal set of mappings can be obtained using basic combination operations or an automatic quality composition of previous matchings. Users will also be able to store and inspect the mappings thus deffned. The system also provides a powerful framework for developers. Each matching method is implemented as a standard component which allows reuse and composition. A standard extensible API is defined to let developers plug and test new matching methods thus minimizing effort and maximizing reuse.</semsur1:hasConclusion>
-        <semsur1:subject>Link Discovery</semsur1:subject>
-        <dc:creator rdf:resource="http://purl.org/semsur/Cosmin_Stroe"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Flavio_Palandri_Antonelli"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Isabel_F._Cruz"/>
-        <swrc:title>AgreementMaker: Ecient Matching for Large Real-World Schemas and Ontologies</swrc:title>
-        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</swrc:year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/SemSur/Avalanche:_Putting_the_spirit_of_the_web_back_into_semantic_web_querying -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/Avalanche:_Putting_the_spirit_of_the_web_back_into_semantic_web_querying">
-        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
-        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
-        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/Avalanche"/>
-        <swrc:publisher rdf:resource="http://purl.org/semsur/SSWS"/>
-        <semsur1:hasConclusion>In this paper we presented Avalanche , a novel approach for querying the Web of Data that (1) makes no assumptions about data distribution, availability, or partitioning, (2) provides up-to-date results, and (3) is flexible since it assumes nothing about the structure of participating triple stores. Specifically, we showed that Avalanche is able to execute non-trivial queries over distributed data-sources with an ex-ante unknown data-distribution. We showed two possible utility functions to guide the planning and execution over the distributed data-sources—the basic simple model and an extended model exploiting join estimation. We found that whilst the simple model found some results faster it did find less results than the extended model using the same stopping criteria. We believe that if we were to query huge information spaces the overhead of badly selected plans will be subdued by the better but slower plans of the extended utility function. To our knowledge, Avalanche is the first Semantic Web query system that makes no assumptions about the data distribution whatsoever. Whilst it is only a first implementation with a number of drawbacks it represents a first important towards bringing the spirit of the web back to triple-stores—a major condition to fulfill the vision of a truly global and open Semantic Web.</semsur1:hasConclusion>
-        <semsur1:hasFutureWork>The Avalanche system has shown how a completely heterogeneous distributed query engine that makes no assumptions about data distribution could be implemented. The current approach does have a number of limitations. In particular, we need to better understand the employed objective functions for the planner, investigate if the requirements put on participating triple-stores are reasonable, explore if Avalanche can be changed to a stateless model, and empirically evaluate if the approach truly scales to large number of hosts. Here we discuss each of these issues in turn. The core optimization of the Avalanche system lies in its cost and utility function. The basic utility function only considers possible joins with no information regarding the probability of the respective join. The proposed utility extension UE estimates the join probability of two highly selective molecules. Although this improves the accuracy of the objective function, its limitation to highly selective molecules is often impractical, as many queries (such as our example query) combine highly selective molecules with non-selective ones. Hence, we need to find a probabilistic distributed join cardinality estimation for low selectivity molecules. One approach might be the usage of bloom-filter caches to store precomputed, “popular” estimates. Another might be investigating sampling techniques for distributed join estimation. In order to support Avalanche existing triple-stores should be able to: – report statistics: cardinalities, bloom filters, other future extensions – support the execution of distributed joins (common in distributed databases), which could be delegated to an intermediary but would be inefficient – share the same key space (can be URIs but would result in bandwidth intensive joins and merges) Whilst these requirements seem simple we need to investigate how complex these extensions of triple-stores are in practice. Even better would be an extension of the SPARQL standard with the above-mentioned operations, which we will attempt to propose. The current Avalanche process assumes that hosts keep partial results throughout plan execution to reduce the cost of local database operations and that result-views are kept for the duration of a query. This limits the number of queries a host can handle. We intend to investigate if a stateless approach is feasible. Note that the simple approach—the use of REST-full services—may not be applicable as the size of the state (i.e., the partial results) may be huge and overburden the available bandwidth. We designed Avalanche with the need for high scalability in mind. The core idea follows the principle of decentralization. It also supports asynchrony using asynchronous HTTP requests to avoid blocking, autonomy by delegating the coordination and execution of the distributed join/update/merge operations to the hosts, concurrency through the pipeline shown in Figure 1, symmetry by allowing each endpoint to act as the initiating Avalanche node for a query caller, and fault tolerance through a number of time-outs and stopping conditions. Nonetheless, an empirical evaluation of Avalanche with a large number of hosts is still missing—a non-trivial shortcoming (due to the lack of suitable, partitioned datasets and the significant experimental complexity) we intend to address in the near future.</semsur1:hasFutureWork>
-        <semsur1:subject>Querying Distributed RDF Data Sources</semsur1:subject>
-        <swrc:abstract>Traditionally Semantic Web applications either included a web crawler or relied on external services to gain access to the Web of Data. Recent efforts have enabled applications to query the entire Semantic Web for up-to-date results. Such approaches are based on either centralized indexing of semantically annotated metadata or link traversal and URI dereferencing as in the case of Linked Open Data. By making limiting assumptions about the information space, they violate the openness principle of the Web – a key factor for its ongoing success. In this article we propose a technique called Avalanche, designed to allow a data surfer to query the Semantic Web transparently without making any prior assumptions about the distribution of the data – thus adhering to the openness criteria. Specifically, Avalanche can perform “live” (SPARQL) queries over the Web of Data. First, it gets on-line statistical information about the data distribution, as well as bandwidth availability. Then, it plans and executes the query in a distributed manner trying to quickly provide first answers. The main contribution of this paper is the presentation of this open and distributed SPARQL querying approach. Furthermore, we propose to extend the query planning algorithm with qualitative statistical information. We empirically evaluate Avalanche using a realistic dataset, show its strengths but also point out the challenges that still exist.</swrc:abstract>
-        <dc:creator rdf:resource="http://purl.org/semsur/Abraham_Bernstein"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Cosmin_Basca"/>
-        <swrc:title>Avalanche: Putting the Spirit of the Web back into Semantic Web Querying</swrc:title>
-        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</swrc:year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/SemSur/Bringing_Relational_Databases_into_the_Semantic_Web:A_Survey -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/Bringing_Relational_Databases_into_the_Semantic_Web:A_Survey">
-        <rdf:type rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
-        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
-        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Publication"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://swrc.ontoware.org/ontology#author"/>
-                <owl:allValuesFrom rdf:resource="http://swrc.ontoware.org/ontology#Person"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://swrc.ontoware.org/ontology#cite"/>
-                <owl:allValuesFrom rdf:resource="http://swrc.ontoware.org/ontology#Publication"/>
-            </owl:Restriction>
-        </rdf:type>
-        <terms:description>Relational databases are considered one of the most popular storage solutions for various kinds of data and they have been recognized as a key factor in generating huge amounts of data for SemanticWeb applications. Ontologies, on the other hand, are one of the key concepts and main vehicle of knowledge in the Semantic Web research area. The problem of bridging the gap between relational databases and ontologies has attracted the interest of the SemanticWeb community, even from the early years of its existence and is commonly referred to as the database-to-ontology mapping problem. However, this term has been used interchangeably for referring to two distinct problems: namely, the creation of an ontology from an existing database instance and the discovery of mappings between an existing database instance and an existing ontology. In this paper, we clearly define these two problems and present the motivation, benefits, challenges and solutions for each one of them. We attempt to gather the most notable approaches proposed so far in the literature, present them concisely in tabular format and group them under a classification scheme. We finally explore the perspectives and future research steps for a seamless and meaningful integration of databases into the Semantic Web.</terms:description>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/SemSur/Bringing_Relational_Databases_into_the_Semantic_Web:_A_Survey -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/Bringing_Relational_Databases_into_the_Semantic_Web:_A_Survey">
-        <rdf:type rdf:resource="http://purl.org/semsur/SurveyPaper"/>
-        <swrc:keywords>Relational Database, Ontology, Mapping, OWL, Survey</swrc:keywords>
-        <dc:creator rdf:resource="http://purl.org/semsur/Dimitrios-Emmanuel_Spanos"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Nikolas_Mitrou"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Periklis_Stavrou"/>
-        <terms:abstract>Relational databases are considered one of the most popular storage solutions for various kinds of data and they have been recognized as a key factor in generating huge amounts of data for SemanticWeb applications. Ontologies, on the other hand, are one of the key concepts and main vehicle of knowledge in the Semantic Web research area. The problem of bridging the gap between relational databases and ontologies has attracted the interest of the SemanticWeb community, even from the early years of its existence and is commonly referred to as the database-to-ontology mapping problem. However, this term has been used interchangeably for referring to two distinct problems: namely, the creation of an ontology from an existing database instance and the discovery of mappings between an existing database instance and an existing ontology. In this paper, we clearly define these two problems and present the motivation, benefits, challenges and solutions for each one of them. We attempt to gather the most notable approaches proposed so far in the literature, present them concisely in tabular format and group them under a classification scheme. We finally explore the perspectives and future research steps for a seamless and meaningful integration of databases into the Semantic Web.</terms:abstract>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/SemSur/Cross:_an_OWL_wrapper_for_teasoning_on_relational_databases -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/Cross:_an_OWL_wrapper_for_teasoning_on_relational_databases">
-        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
-        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
-        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/CROSS"/>
-        <swrc:publisher rdf:resource="http://purl.org/semsur/International_Conference_on_Conceptual_Modeling"/>
-        <semsur1:hasConclusion>In this paper, we have proposed the ODBC model, a formalization of relational databases focusing on their logic model. We have then presented a transformation of that model into OWL, a DL-based language designed for the Semantic Web. This transformation is implemented by the Cross open-source prototype, which effectively introduces the interesting notion of semantic values. We proved that the knowledge based produced by this transformation is consistent if and only if the source database state is weakly legal (i.e. legal but regarding foreign key constraints). Taking advantage of that result, we have shown how that transformation can prove useful for the purpose of analysing legacy RDBs, enhancing existing RDBs with additional constraints, and integrating them in the SW.</semsur1:hasConclusion>
-        <semsur1:hasFutureWork>A first direction for further work would be to try and strengthen the theorem, to have an equivalence of OWL consistency with full legality, i.e. taking into account foreign keys. This could actually be done by using an expressive feature of OWL (the oneOf constructor, not mentioned in this paper), but would possibly make the reasoning intractable. Another solution would be to propose, in a similar way to finite model reasoning, an algorithm of closed world reasoning which would not be allowed to create individuals. We also want to get more experimental results for the Cross implementation. Preliminary results are encouraging: the transformation of the schema of real database (127 tables, 869 columns, 132 unicity constraints, no foreign key) took around 1.5s; the resulting ontology was loaded in Pellet in about 9s, while reasoning took about 3s. Those results seem reasonable for a quite big schema. We now plan to experiment on the use cases presented in Section 6.3 with that database and a sample of other real databases.</semsur1:hasFutureWork>
-        <semsur1:subject>Bringing Relational Databases into the Semantic Web</semsur1:subject>
-        <swrc:abstract>One of the challenges of the Semantic Web is to integrate the huge amount of information already available on the standard Web, usually stored in relational databases. In this paper, we propose a formalization of a logic model of relational databases, and a transformation of that model into OWL, a Semantic Web language. This transformation is implemented in Cross, as an open-source prototype. We prove a relation between the notion of legal database state and the consistency of the corresponding OWL knowledge base. We then show how that transformation
-can prove useful to enhance databases, and integrate them in the Semantic Web.</swrc:abstract>
-        <dc:creator rdf:resource="http://purl.org/semsur/Geert-Jan_Houben"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Philippe_Thiran"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Pierre-Antoine_Champin"/>
-        <swrc:title>Cross: an OWL wrapper for teasoning on relational databases</swrc:title>
-        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2007</swrc:year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/SemSur/D2RQ_–_Treating_Non-RDF_Databases_as_Virtual_RDF_Graphs -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/D2RQ_–_Treating_Non-RDF_Databases_as_Virtual_RDF_Graphs">
-        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
-        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
-        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/D2RQ"/>
-        <swrc:publisher rdf:resource="http://purl.org/SemSur/EDBT/ICDT_Workshops"/>
-        <semsur1:hasConclusion>D2RQ offers a flexible, easy-to-use access mechanism to non-RDF databases. It allows the integration of legazy databases into the data access architecture currently standardized by the W3C Data Access Working Group</semsur1:hasConclusion>
-        <semsur1:subject>Bringing Relational Databases into the Semantic Web</semsur1:subject>
-        <swrc:abstract>As Semantic Web technologies are getting mature, there is a growing need for RDF applications to access the content of huge, live, non-RDF, legacy databases without having to replicate the whole database into RDF. In this poster we present D2RQ, a declarative language to describe mappings between application-specific relational database schemata and RDF-S/OWL ontologies. D2RQ allows RDF applications to treat non-RDF relational databases as virtual RDF graphs, which can be queried using RDQL.</swrc:abstract>
-        <dc:creator rdf:resource="http://purl.org/semsur/Andy_Seaborne"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Christian_Bizer"/>
-        <swrc:title>D2RQ – Treating Non-RDF Databases as Virtual RDF Graphs</swrc:title>
-        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2004</swrc:year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/SemSur/EDBT/ICDT_Workshops -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/EDBT/ICDT_Workshops">
-        <rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <swrc:publishes rdf:resource="http://purl.org/semsur/Treating_Non-RDF_Databases_as_Virtual_RDF_Graphs"/>
-        <swrc:publishes rdf:resource="http://purl.org/SemSur/Updating_Relational_Data_via_SPARQL/Update"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/SemSur/FedX:_a_federation_layer_for_distributed_query_processing_on_linked_open_data -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/FedX:_a_federation_layer_for_distributed_query_processing_on_linked_open_data">
-        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
-        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
-        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/FedX"/>
-        <swrc:publisher rdf:resource="http://purl.org/semsur/ISWC"/>
-        <semsur1:hasConclusion>In this paper, we proposed novel optimization techniques for efficient SPARQL query processing in the federated setting. As revealed by our benchmarks, bound joins combined with our grouping and source selection approaches are effective in terms of performance. By minimizing the number of intermediate requests, we are able to improve query performance significantly compared to state-of-the-art systems. We presented FedX, a practical solution that allows for querying multiple distributed Linked Data sources as if the data resides in a virtually integrated RDF graph. Compatible with the SPARQL 1.0 query language, our framework allows clients to integrate available SPARQL endpoints on-demand into a federation without any local preprocessing. While we focused on optimization techniques for conjunctive queries, namely basic graph patterns (BGPs), there is additional potential in developing novel, operator-specific optimization techniques for distributed settings (in particular for OPTIONAL queries), which we are planning to address in future work. As our experiments confirm, the optimization of BGPs alone (combined with common equivalent rewritings) already yields significant performance gains. Important features for federated query processing are the federation extensions proposed for the upcoming SPARQL 1.1 language definition. These allow to specify data sources directly within the query using the SERVICE operator, and moreover to attach mappings to the query as data using the BINDINGS operator. When implementing the SPARQL 1.1 federation extensions for our next release,FedX can exploit these language features to further improve performance. In fact, the SPARQL 1.1 SERVICE keyword is a trivial extension, which enhances our source selection approach with possibilities for manual specification of new sources and gives the query designer more control. Statistics can in uence performance tremendously in a distributed setting. Currently, FedX does not use any local statistics since we follow the design goal of on-demand federation setup. We aim at providing a federation framework, in which data sources can be integrated ad-hoc, and used immediately for query processing. In a future release, (remote) statistics (e.g., using VoID ) can be incorporated for source selection and to further improve our join order algorithm.</semsur1:hasConclusion>
-        <semsur1:hasFutureWork>While we focused on optimization techniques for conjunctive queries, namely basic graph patterns (BGPs), there is additional potential in developing novel, operator-specific optimization techniques for distributed settings (in particular for OPTIONAL queries), which we are planning to address in future work. In a future release, (remote) statistics (e.g., using VoID) can be incorporated for source selection and to further improve our join order algorithm.</semsur1:hasFutureWork>
-        <semsur1:subject>Querying Distributed RDF Data Sources</semsur1:subject>
-        <swrc:abstract>Motivated by the ongoing success of Linked Data and the growing amount of semantic data sources available on the Web, new challenges to query processing are emerging. Especially in distributed settings that require joining data provided by multiple sources, sophisticated optimization techniques are necessary for efficient query processing. We propose novel join processing and grouping techniques to minimize the number of remote requests, and develop an effective solution for source selection in the absence of preprocessed metadata. We present FedX, a practical framework that enables efficient SPARQL query processing on heterogeneous, virtually integrated Linked Data sources. In experiments, we demonstrate the practicability and efficiency of our framework on a set of real-world queries and data sources from the Linked Open Data cloud. With FedX we achieve a significant improvement in query performance over state-of-the-art federated query engines.</swrc:abstract>
-        <dc:creator rdf:resource="http://purl.org/semsur/Andreas_Schwarte"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Katja_Hose"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Michael_Schmidt"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Peter_Haase"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Ralf_Schenkel"/>
-        <swrc:title>FedX: Optimization Techniques for Federated Query Processing on Linked Data</swrc:title>
-        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</swrc:year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/SemSur/KnoFuss:_A_Comprehensive_Architecture_for_Knowledge_Fusion -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/KnoFuss:_A_Comprehensive_Architecture_for_Knowledge_Fusion">
-        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
-        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
-        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/KnoFuss"/>
-        <swrc:publisher rdf:resource="http://purl.org/semsur/K-CAP"/>
-        <semsur1:subject>Link Discovery</semsur1:subject>
-        <swrc:abstract>We propose a knowledge fusion architecture KnoFuss based on the application of problem-solving methods technology, which allows methods for subtasks of the fusion process to be combined and the best methods to be selected, depending on the domain and task at hand.</swrc:abstract>
-        <dc:creator rdf:resource="http://purl.org/semsur/Andriy_Nikolov"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Enrico_Motta"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Victoria_Uren"/>
-        <swrc:title>KnoFuss: A Comprehensive Architecture for Knowledge Fusion</swrc:title>
-        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2007</swrc:year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/SemSur/Knowledge_Graph_Refinement:_A_Survey_of_Approaches_and_Evaluation_Methods -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/Knowledge_Graph_Refinement:_A_Survey_of_Approaches_and_Evaluation_Methods">
-        <rdf:type rdf:resource="http://purl.org/semsur/SurveyPaper"/>
-        <semsur1:hasConclusion>In this paper, we have presented a survey on knowledge base refinement methods. We distinguish completion from error detection, and internal from external methods. We have shown that a larger body of works exist which apply different methods, ranging from techniques from the machine learning field to NLP related techniques. The survey has revealed that there are, at the moment, rarely any approaches which simultaneously try to improve completeness and correctness of knowledge graphs, and usually only address one target, such as type or relation assertions, or literal values. Holistic solutions which simultaneously improve the quality of knowledge graphs in many different aspects are currently not observed. Looking at the evaluation methods, the picture is quite diverse. Different methods are applied, using either the knowledge graph itself as a silver standard, using a partial gold standard, or performing a retrospective evaluation, are about equally distributed. Furthermore, approaches are often only evaluated on one specific knowledge graph. This makes it hard to compare approaches and make general statements on their relative performance.</semsur1:hasConclusion>
-        <semsur1:subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Knowledge Graph Refinement: A Survey of Approaches and Evaluation Methods</semsur1:subject>
-        <swrc:abstract>In the recent years, different Web knowledge graphs, both free and commercial, have been created. While Google coined the term “Knowledge Graph” in 2012, there are also a few openly available knowledge graphs, with DBpedia, YAGO,
-and Freebase being among the most prominent ones. Those graphs are often constructed from semi-structured knowledge, such as Wikipedia, or harvested from the web with a combination of statistical and linguistic methods. The result are large-scale knowledge graphs that try to make a good trade-off between completeness and correctness. In order to further increase the utility of such knowledge graphs, various refinement methods have been proposed, which try to infer and add missing knowledge to the graph, or identify erroneous pieces of information. In this article, we provide a survey of such knowledge graph refinement approaches, with a dual look at both the methods being proposed as well as the evaluation methodologies used.</swrc:abstract>
-        <swrc:keywords>Knowledge Graphs, Refinement, Completion, Correction, Error Detection, Evaluation</swrc:keywords>
-        <dc:creator rdf:resource="http://purl.org/semsur/Heiko_Paulheim"/>
-        <terms:abstract>In the recent years, different Web knowledge graphs, both free and commercial, have been created. While Google coined the term “Knowledge Graph” in 2012, there are also a few openly available knowledge graphs, with DBpedia, YAGO, and Freebase being among the most prominent ones. Those graphs are often constructed from semi-structured knowledge, such as Wikipedia, or harvested from the web with a combination of statistical and linguistic methods. The result are large-scale knowledge graphs that try to make a good trade-off between completeness and correctness. In order to further increase the utility of such knowledge graphs, various refinement methods have been proposed, which try to infer and add missing knowledge to the graph, or identify erroneous pieces of information. In this article, we provide a survey of such knowledge graph refinement approaches, with a dual look at both the methods being proposed as well as the evaluation methodologies used.</terms:abstract>
-        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</swrc:year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/SemSur/Linked_hypernyms:_Enriching_DBpedia_with_Targeted_Hypernym_Discovery -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/Linked_hypernyms:_Enriching_DBpedia_with_Targeted_Hypernym_Discovery">
-        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
-        <swrc:keywords>DBpedia
-Hearst patterns
-Hypernym
-Linked data
-YAGO
-Wikipedia
-Type inference</swrc:keywords>
-        <dc:creator rdf:resource="http://purl.org/semsur/Tomáš_Kliegr"/>
-        <terms:abstract>The Linked Hypernyms Dataset (LHD) provides entities described by Dutch, English and German
-Wikipedia articles with types in the DBpedia namespace. The types are extracted from the first sentences
-of Wikipedia articles using Hearst pattern matching over part-of-speech annotated text and disambiguated
-to DBpedia concepts. The dataset covers 1.3 million RDF type triples from English Wikipedia,
-out of which 1 million RDF type triples were found not to overlap with DBpedia, and 0.4 million with
-YAGO2s. There are about 770 thousand German and 650 thousand Dutch Wikipedia entities assigned a
-novel type, which exceeds the number of entities in the localized DBpedia for the respective language. RDF
-type triples from the German dataset have been incorporated to the German DBpedia. Quality assessment
-was performed altogether based on 16.500 human ratings and annotations. For the English dataset, the
-average accuracy is 0.86, for German 0.77 and for Dutch 0.88. The accuracy of raw plain text hypernyms
-exceeds 0.90 for all languages. The LHD release described and evaluated in this article targets DBpedia 3.8,
-LHD version for the DBpedia 3.9 containing approximately 4.5 million RDF type triples is also available.</terms:abstract>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/SemSur/LogMap:Logic-based_and_Scalable_Ontology_Matching -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/LogMap:Logic-based_and_Scalable_Ontology_Matching">
-        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
-        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
-        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/LogMap"/>
-        <swrc:publisher rdf:resource="http://purl.org/semsur/ISWC"/>
-        <semsur1:hasConclusion>In this paper, we have presented LogMap|a highly scalable ontology matching tool with built-in reasoning and diagnosis capabilities. LogMap&apos;s features and scalability behaviour make it well-suited for matching large-scale ontologies. LogMap, however, is still an early-stage prototype and there is plenty of room for improvement. We are currently working on further optimisations, and in the near future we are planning to integrate LogMap with a Protege-based front-end, such as the one implemented in our tool ContentMap</semsur1:hasConclusion>
-        <semsur1:hasFutureWork>In this paper, we have presented LogMap|a highly scalable ontology matching tool with built-in reasoning and diagnosis capabilities. LogMap&apos;s features and scalability behaviour make it well-suited for matching large-scale ontologies. LogMap, however, is still an early-stage prototype and there is plenty of room for improvement. We are currently working on further optimisations, and in the near future we are planning to integrate LogMap with a Protege-based front-end, such as the one implemented in our tool ContentMap</semsur1:hasFutureWork>
-        <semsur1:subject>Link Discovery</semsur1:subject>
-        <swrc:abstract>In this paper, we present LogMap|a highly scalable ontology matching system with `built-in&apos; reasoning and diagnosis capabilities. To the best of our knowledge, LogMap is the only matching system that can deal with semantically rich ontologies containing tens (and even hundreds) of thousands of classes. In contrast to most existing tools, LogMap also implements algorithms for `on they&apos; unsatisfiability detection and repair. Our experiments with the ontologies NCI, FMA and SNOMED CT conrm that our system can effciently match even the largest existing bio-medical ontologies. Furthermore, LogMap is able to produce a `clean&apos; set of output mappings in many cases, in the sense that the ontology obtained by integrating LogMap&apos;s output mappings with the input ontologies is consistent and does not contain unsatisfiable classes.</swrc:abstract>
-        <dc:creator rdf:resource="http://purl.org/semsur/Bernardo_Cuenca_Grau"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Ernesto_Jimenez-Ruiz"/>
-        <swrc:title>LogMap:Logic-based and Scalable Ontology Matching</swrc:title>
-        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</swrc:year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/SemSur/OWLED_Workshop_on_OWL:_Experiences_and_Directions -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/OWLED_Workshop_on_OWL:_Experiences_and_Directions">
-        <rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/SemSur/Querying_over_Federated_SPARQL_Endpoints_—A_State_of_the_Art_Survey -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/Querying_over_Federated_SPARQL_Endpoints_—A_State_of_the_Art_Survey">
-        <rdf:type rdf:resource="http://purl.org/semsur/SurveyPaper"/>
-        <semsur1:hasConclusion>In this work, we have presented a list of federation frameworks over SPARQL Endpoints along with their features. According to this list, the user can have considerations to choose the suitable federation framework for their case. We have classified those framework into three categories: i) framework interprets SPARQL 1.1 query to execute federation SPARQL query covering VALUES and SERVICE operator; ii) framework handles SPARQL 1.0 query and has responsibility to find relevant source for a query and join incoming result from SPARQL Endpoints; and iii) framework accepts SPARQL 1.0 and translate the incoming query to SPARQL 1.1 format.</semsur1:hasConclusion>
-        <swrc:keywords>Federation, SPARQL, RDF, Linked Data</swrc:keywords>
-        <dc:creator rdf:resource="http://purl.org/semsur/Ali_Hasnain"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Jurgen_Umbrich"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Marcel_Karnstedt"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Michael_Hausenblas"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Nur_Aini_Rakhmawati"/>
-        <terms:abstract>The increasing amount of Linked Data and its inherent distributed nature have
-attracted significant attention throughout the research community and amongst practitioners to search data, in the past years. Inspired by research results from traditional distributed databases, dierent approaches for managing federation over SPARQL Endpoints have been introduced. SPARQL is the standardised query language for RDF, the default data model used in Linked Data deployments and SPARQL Endpoints are a popular access mechanism provided by many Linked Open Data (LOD) repositories. In this paper, we initially give an overview of the federation framework infrastructure and then proceed with a comparison of existing SPARQL federation frameworks. Finally, we highlight shortcomings in existing frameworks, which we hope helps spawning new research directions.</terms:abstract>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/SemSur/RDB2ONT:_A_Tool_for_Generating_OWL_Ontologies_From_Relational_Database_Systems -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/RDB2ONT:_A_Tool_for_Generating_OWL_Ontologies_From_Relational_Database_Systems">
-        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
-        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
-        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/RDB2ONT"/>
-        <swrc:publisher rdf:resource="http://purl.org/semsur/AICTICIW"/>
-        <semsur1:hasConclusion>In this paper, an algorithm and tool for generating OWL ontologies from relational database systems is presented. The tool, RDB2ONT, helps the domain experts to quickly generate and publish OWL ontologies describing the underlying relational database systems while preserving their structural constraints. The generated ontologies are constructed using a set of vocabularies and structures defined in schema that describes relational database systems on the web so they guarantees that user applications can work with data instances that conformed to a set of known vocabularies and structures. The generated ontologies provide a standardized and meaningful way for describing the underlying relational database systems so they “bridge” the semantic gaps between the ontologies describing relational database systems and/or the ontologies describing other data sources on the web such as flat-files, semi-structures, etc. Concepts in OWL ontologies can be defined at multiple levels of granularities thus the generated OWL ontologies can be used to address the semantic heterogeneity problem at multiple levels. Evolutions of database systems in large-scale environments are inevitable so by using the RDB2ONT tool, OWL ontologies can be re-generated with little effort from the domain experts thus speed up the process of facilitating data in the underlying relational database systems with other data sources on the web.</semsur1:hasConclusion>
-        <semsur1:hasFutureWork>Although the generated OWL ontologies provide the explicit meaning of concepts and their semantic relationships between related concepts, there are still many open research questions that need to be addressed. One of the questions is how to merge the generated OWL ontologies into an integrated OWL ontology so that common views of concepts can be achieved? This would allow users to pose queries on the common views of concepts rather than the concepts defined in the individual ontologies. Merging OWL ontologies will also require the resolution of the structural differences between OWL ontologies. Another question is how can existing OWL ontology inference engines such as Jena 2 or Pellet can be used to infer the semantic relationships between concepts defined in multiple OWL ontologies at multiple levels of granularities? The result of this research is important since it would enable users to combine related data from multiple data sources at multiple levels of granularities. In the real world, different organizations are likely to use different data models, thus tools for generating OWL ontologies automatically and dynamically from other data models (e.g., flat-files, object-oriented, etc.) are also needed. As mentioned previously, having different OWL ontologies describing different data models will allow users to relate semantically related data in different data models together thus enabling these different data sources to interoperate with each other semantically.</semsur1:hasFutureWork>
-        <semsur1:subject>Bringing Relational Databases into the Semantic Web</semsur1:subject>
-        <swrc:abstract>This paper describes a framework that uses the Semantic Web infrastructure to address semantic interoperability between relational database systems in large-scale environments and at multiple levels of granularities. Given a relational database system, we describe a formal algorithm to use the relational database Rs meta-data and structural constraints to construct its OWL ontology while preserving the structural constraints of the underlying relational database system. The generated ontology is described using and conforming to a set of vocabularies defined in an ontology that describes relational database systems on the web. Using this set of vocabularies guarantee that applications on the web can work with data instances that conformed to a set of known vocabularies and structures. Finally, we describe our prototype and how semantic conflicts are resolved between multiple relational database systems using the generated ontologies</swrc:abstract>
-        <dc:creator rdf:resource="http://purl.org/semsur/Ken_Barker"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Quang_Trinh"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Reda_Alhajj"/>
-        <swrc:title>RDB2ONT: A Tool for Generating OWL Ontologies From Relational Database Systems</swrc:title>
-        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2006</swrc:year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/SemSur/Runtime_optimization/Blocking -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/Runtime_optimization/Blocking">
-        <rdf:type rdf:resource="http://purl.org/semsur/Problem"/>
-        <rdf:type rdf:resource="http://purl.org/semsur/ProblemSolution"/>
-        <semsur1:hasSolution rdf:resource="http://purl.org/semsur/multi-dimensional"/>
-        <semsur1:isSubproblem rdf:resource="http://purl.org/semsur/Link_Discovery"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/SemSur/Runtime_optimization/Filtering -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/Runtime_optimization/Filtering">
-        <rdf:type rdf:resource="http://purl.org/semsur/Problem"/>
-        <rdf:type rdf:resource="http://purl.org/semsur/ProblemSolution"/>
-        <semsur1:hasSolution rdf:resource="http://purl.org/semsur/indexing"/>
-        <semsur1:isSubproblem rdf:resource="http://purl.org/semsur/Link_Discovery"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/SemSur/SERIMI_-_Resource_Description_Similarity,_RDF_Instance_Matching_and_Interlinking. -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/SERIMI_-_Resource_Description_Similarity,_RDF_Instance_Matching_and_Interlinking.">
-        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
-        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
-        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/SERIMI"/>
-        <swrc:publisher rdf:resource="http://purl.org/semsur/International_Workshop_on_Ontology_Matching"/>
-        <semsur1:hasConclusion>RDF instance matching in the context of interlinking RDF datasets published in the Linked Data Cloud is the task of determining if two resources are referred to the same entity in the real world. This is a challenging task in high demand by data publishers that wish to interlink their datasets in the cloud. In this work, we propose a novel approach, called SERIMI, for solving the RDF instance-matching problem automatically. SERIMI matches instances between a source and target datasets, without prior knowledge of the data, domain or schema of these datasets. It does so by approximating the notion of similarity by pairing instances based on entity labels as well as structural (ontological) context. As part of the SERIMI approach, we proposed the CRDS function to approximate that judgment of similarity. We used two collections proposed by the OAEI 2010 initiative to evaluate SERIMI. On average, SERIMI outperforms two representative systems, RiMOM and ObjectCoref, which tried to solve the same problem using the same collections and reference alignment, in 70% of the cases.</semsur1:hasConclusion>
-        <semsur1:hasFutureWork>As future work, we intend to investigate how our model can be adjusted to consider partial string matching in the similarity function that we proposed, and to accommodate different score distribution metrics as the threshold for the parameter δthreshold. Also, we intend to evaluate this approach in different collections that may provide a more accurate reference alignment than the ones that we used in this work.</semsur1:hasFutureWork>
-        <semsur1:subject>Link Discovery</semsur1:subject>
-        <swrc:abstract>The interlinking of datasets published in the Linked Data Cloud is a challenging problem and a key factor for the success of the Semantic Web. Manual rule-based methods are the most effective solution for the problem, but they require skilled human data publishers going through a laborious, error prone and time-consuming process for manually describing rules mapping instances between two datasets. Thus, an automatic approach for solving this problem is more than welcome. In this paper, we propose a novel interlinking method, SERIMI, for solving this problem automatically. SERIMI matches instances between a source and a target datasets, without prior knowledge of the data, domain or schema of these datasets. Experiments conducted with benchmark collections demonstrate that our approach considerably outperforms state-of-the-art automatic approaches for solving the interlinking problem on the Linked Data Cloud.</swrc:abstract>
-        <dc:creator rdf:resource="http://purl.org/semsur/Arjen_P._de_Vries"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Daniel_Schwabe"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Jan_Hidders"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Samur_Araujo"/>
-        <swrc:title>SERIMI - Resource Description Similarity, RDF Instance Matching and Interlinking.</swrc:title>
-        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</swrc:year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/SemSur/SLINT:_A_Schema-Independent_Linked_Data_Interlinking_System -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/SLINT:_A_Schema-Independent_Linked_Data_Interlinking_System">
-        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
-        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
-        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/SLINT"/>
-        <swrc:publisher rdf:resource="http://purl.org/semsur/International_Workshop_on_Ontology_Matching"/>
-        <semsur1:hasConclusion>In this paper, we present SLINT, an efficient schema-independent linked data interlinking system. We select important predicates by predicate’s coverage and discriminability. The predicate alignments are constructed and filtered for obtaining key alignments.We implement an adaptive filtering technique to produce candidates and identities. Compare with the most recent systems, SLINT highly outperforms the precision and recall in interlinking. The performance of SLINT is also very high when it takes around 1 minute to detect more than 13,000 identity pairs. Although SLINT has good result on tested datasets, it is not sufficient to evaluate the scalability of our system, which we consider as the current limiting point because of the used of weighted co-occurrence matrix. We will investigate about a solution for this issue in our next work. Besides, we also interested in automatic configuration for every threshold used in SLINT and improving SLINT into a novel cross-domain interlinking system.</semsur1:hasConclusion>
-        <semsur1:subject>Link Discovery</semsur1:subject>
-        <swrc:abstract>Linked data interlinking is the discovery of all instances that represent the same real-world object and locate in different data sources. Since different data publishers frequently use different schemas for storing resources, we aim at developing a schema-independent interlinking system. Our system automatically selects important predicates and useful predicate alignments, which are used as the key for blocking and instance matching. The key distinction of our system is the use of weighted co-occurrence and adaptive filtering in blocking and instance matching. Experimental results show that the system highly improves the precision and recall over some recent ones. The performance of the system and the efficiency of main steps are also discussed.</swrc:abstract>
-        <dc:creator rdf:resource="http://purl.org/semsur/Bac_Le"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Khai_Nguyen"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Ryutaro_Ichise"/>
-        <swrc:title>SLINT: A Schema-Independent Linked Data Interlinking System</swrc:title>
-        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2012</swrc:year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/SemSur/SPLENDID:_SPARQL_Endpoint_Federation_Exploiting_VOID_Descriptions -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/SPLENDID:_SPARQL_Endpoint_Federation_Exploiting_VOID_Descriptions">
-        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
-        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
-        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/Splendid"/>
-        <swrc:publisher rdf:resource="http://purl.org/semsur/International_Conference_on_Consuming_Linked_Data"/>
-        <semsur1:hasConclusion>SPLENDID allows for transparent query federation over distributed SPARQL endpoints. In order to achieve a good query execution performance, data source selection and query optimization is based on basic statistical information which is obtained from VOID descriptions. The utilization of open semantic web standards, like VOID and SPARQL endpoints, allows for flexible integration of various distributed and linked RDF data sources. We have described in detail the implementation of the data source selection and the join order optimization. The evaluation shows that our approach can achieve good query performance and is competitive compared to other state-of-the-art federation implementations. In our analysis of the source selection we came to the conclusion that at least predicate and type statistics should be included in VOID description for RDF datasets. The use of 3rd party sameAs links, however, can significantly increase the number of requests and thus, hamper the efficiency of query execution plans. The comparison of the two employed physical join implementations has shown that the network overhead plays an important role. Both hash join and bind join can significantly reduce the query processing time for certain types of queries. With SPLENDID we also like to advocate the adoption of VOID statistics for Linked Data.
-As next steps, we plan to investigate whether VOID descriptions can easily be extended with more detailed statistics in order to allow for more accurate cardinality estimates and, thus, better query execution plans. On the other hand, the actual query execution has not yet been optimized in SPLENDID. Therefore, we plan to integrate optimization techniques as used in FedX. Moreover, the adoption of the SPARQL 1.1 federation extension will also allow for more efficient query execution.</semsur1:hasConclusion>
-        <semsur1:hasFutureWork>As next steps, we plan to investigate whether VOID descriptions can easily be extended with more detailed statistics in order to allow for more accurate cardinality estimates and, thus, better query execution plans. On the other hand, the actual query execution has not yet been optimized in SPLENDID. Therefore, we plan to integrate optimization techniques as used in FedX. Moreover, the adoption of the SPARQL 1.1 federation extension will also allow for more efficient query execution.</semsur1:hasFutureWork>
-        <semsur1:subject>Querying Distributed RDF Data Sources</semsur1:subject>
-        <swrc:abstract>In order to leverage the full potential of the Semantic Web it is necessary to transparently query distributed RDF data sources in the same way as it has been possible with federated databases for ages. However, there are significant differences between the Web of (linked) Data and the traditional database approaches. Hence, it is not straightforward to adapt successful database techniques for RDF federation. Reasons are the missing cooperation between SPARQL endpoints and the need for detailed data statistics for estimating the costs of query execution plans. We have implemented SPLENDID, a query optimization strategy for federating SPARQL endpoints based on statistical data obtained from voiD descriptions.</swrc:abstract>
-        <dc:creator rdf:resource="http://purl.org/semsur/Olaf_Gorlitz"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Steffen_Staab"/>
-        <swrc:title>SPLENDID: SPARQL Endpoint Federation Exploiting VOID Descriptions</swrc:title>
-        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</swrc:year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/SemSur/The_Semantic_Web:_Research_and_Applications -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/The_Semantic_Web:_Research_and_Applications">
-        <rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/SemSur/Unveiling_the_hidden_bride:_deep_annotation_for_mapping_and_migrating_legacy_data_to_the_Semantic_Web -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/Unveiling_the_hidden_bride:_deep_annotation_for_mapping_and_migrating_legacy_data_to_the_Semantic_Web">
-        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
-        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
-        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/OntoMat-Reverse"/>
-        <swrc:publisher rdf:resource="http://purl.org/semsur/Journal_of_web_semantics"/>
-        <semsur1:hasConclusion>In this paper, we have described deep annotation, an original framework to provide semantic annotation for large sets of data. Deep annotation leaves semantic data where it can be handled best, viz. in database systems. Thus, deep annotation provides a means for mapping and reusing dynamic data in the Semantic
-Web with tools that are comparatively simple and intuitive to use. To attain this objective we have defined a deep annotation process and the appropriate architecture. We have incorporated the means for server side markup that allows the user to define semantic mappings by using OntoMat-Annotizer to create Web presentation-based annotations12 and OntoMat-Reverse to create schema-based annotations. An ontology and mapping editor and an inference engine are then used to investigate and exploit the resulting descriptions either for querying the database content or to materialize the content into RDF files. In total, we have provided a complete framework and its prototype implementation for deep annotation.</semsur1:hasConclusion>
-        <semsur1:hasFutureWork>For the future, there is a long list of open issues concerning deep annotation—from the more mundane, though important, ones (top) to far-reaching ones (bottom): (1) Granularity: So far we have only considered atomic database fields. For instance, one may find a string “Proceedings of the Eleventh International World Wide Web Conference, WWW2002, Honolulu, Hawaii, USA, 7–11 May 2002.” as the title of a book whereas one might rather be interested in separating this field into title, location, and date. (2) Automatic derivation of server-side Web page markup: A content management system like Zope could provide the means for automatically deriving server-side Web page markup for deep annotation. Thus, the database provider could be freed from any workload, while allowing for participation in the Semantic Web. Some steps in this direction are currently being pursued in the KAON CMS, which is based on Zope. (3) Other information structures: For now, we have built our deep annotation process on SQL and relational databases. Future schemes could exploit Xquery or an ontology-based query language. (4) Interlinkage: In the future deep annotations may even link to each other, creating a dynamic interconnected Semantic Web that allows translation between different servers. (5) Opening the possibility to directly query the database, certainly creates problems such as new possibilities for denial of service attacks. In fact, queries, e.g. ones that involve too many joins over large tables, may prove hazardous. Nevertheless, we see this rather as a challenge to be solved by clever schemes for CPU processing time (with the possibility that queries are not answered because the time allotted for one query to one user is up) than for a complete “no go.” We believe that these options make deep annotation a rather intriguing scheme on which a considerable part of the Semantic Web might be built.</semsur1:hasFutureWork>
-        <semsur1:subject>Bringing Relational Databases into the Semantic Web</semsur1:subject>
-        <swrc:abstract>The success of the Semantic Web crucially depends on the easy creation, integration, and use of semantic data. For this purpose, we consider an integration scenario that defies core assumptions of current metadata construction methods. We describe a framework of metadata creation where Web pages are generated from a database and the database owner is cooperatively participating in the Semantic Web.  This leads us to the deep annotation of the database—directly by annotation of the logical database schema or indirectly by annotation of the Web presentation generated from the database contents. From this annotation, one may execute data mapping and/or migration steps, and thus prepare the data for use in the Semantic Web. We consider deep annotation as particularly valid because: (i) dynamic Web pages generated from databases outnumber static Web pages, (ii) deep annotation may be a very intuitive way to create semantic data from a database, and (iii) data from databases should remain where it can be handled most efficiently—in its databases. Interested users can then query this data directly or choose to materialize the data as RDF files.</swrc:abstract>
-        <dc:creator rdf:resource="http://purl.org/semsur/Ljiljana_Stojanovic"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Nenad_Stojanovic"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Raphael_Volz"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Siegfried_Handschuh"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Steffen_Staab"/>
-        <swrc:title>Unveiling the hidden bride: deep annotation for mapping and migrating legacy data to the Semantic Web</swrc:title>
-        <swrc:year>Bringing Relational Databases into the Semantic Web</swrc:year>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/SemSur/Updating_Relational_Data_via_SPARQL/Update -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/SemSur/Updating_Relational_Data_via_SPARQL/Update">
-        <rdf:type rdf:resource="http://purl.org/semsur/RegularPaper"/>
-        <rdf:type rdf:resource="http://purl.org/semsur/SingleAuthorPublication"/>
-        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article"/>
-        <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Publication"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://swrc.ontoware.org/ontology#author"/>
-                <owl:allValuesFrom rdf:resource="http://swrc.ontoware.org/ontology#Person"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://swrc.ontoware.org/ontology#cite"/>
-                <owl:allValuesFrom rdf:resource="http://swrc.ontoware.org/ontology#Publication"/>
-            </owl:Restriction>
-        </rdf:type>
-        <semsur1:proposeFramework rdf:resource="http://purl.org/semsur/R3M"/>
-        <swrc:publisher rdf:resource="http://purl.org/SemSur/EDBT/ICDT_Workshops"/>
-        <semsur1:hasFutureWork>Future work is planned for various aspects of OntoAccess. Further research needs to be done on bridging the conceptual gap between RDBs and the Semantic Web. Ontology-based write access to the relational data creates completely new challenges on this topic with respect to read-only approaches. The presence of schema constraints in the database can lead to the rejection of update requests that would otherwise be accepted by a native triple store. A feedback protocol that provides semantically rich information about the cause of a rejection and possible directions for improvement plays a major role in bridging the gap. Other database constraints such as assertions have to be evaluated as well to see if they can reasonably be supported in the mapping. Also, a more formal definition of the mapping language will be provided. Furthermore, we will extend our prototype implementation to support the SPARQL/Update MODIFY operation, SPARQL queries, and the just mentioned feedback protocol.</semsur1:hasFutureWork>
-        <semsur1:hasFutureWork>In this paper, we presented our approach OntoAccess that enables the manipulation of relational data via SPARQL/Update. We introduced the update-aware RDB to RDF mapping language R3M that captures additional information about the database schema, in particular about integrity constraints. This information enables the detection of update requests that are invalid from the RDB perspective. Such requests cannot be executed by the database engine as they would violate integrity constraints of the database schema. The information can also be exploited to provide semantically rich feedback to the client. Therefore, the causes for the rejection of a request and possible directions for improvement can be reported in an appropriate format.</semsur1:hasFutureWork>
-        <semsur1:subject>Bringing Relational Databases into the Semantic Web</semsur1:subject>
-        <swrc:abstract>Relational Databases are used in most current enterprise environments to store and manage data. The semantics of the data is not explicitly encoded in the relational model, but implicitly on the application level. Ontologies and Semantic Web technologies provide explicit semantics that allows data to be shared and reused across application, enterprise, and community boundaries. Converting all relational data to RDF is often not feasible, therefore we adopt an ontology-based access to relational databases. While existing approaches focus on read-only access, we present our approach OntoAccess that adds ontology-based write access to relational data. OntoAccess consists of the update-aware RDB to RDF mapping language R3M and algorithms for translating SPARQL/Update operations to SQL. This paper presents the mapping language, the translation algorithms, and a prototype implementation of OntoAccess.</swrc:abstract>
-        <dc:creator rdf:resource="http://purl.org/semsur/Gerald_Reif"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Harald_C._Gall"/>
-        <dc:creator rdf:resource="http://purl.org/semsur/Matthias_Hert"/>
-        <swrc:title>Updating Relational Data via SPARQL/Update</swrc:title>
-        <swrc:year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</swrc:year>
     </owl:NamedIndividual>
     
 
