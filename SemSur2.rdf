@@ -52,16 +52,16 @@
         <terms:title xml:lang="en">SemSur, Version 2.0</terms:title>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-11</terms:modified>
         <dc:creator xml:lang="en">Christoph Lange</dc:creator>
-        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">semsur</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:datatype="http://purl.org/dc/terms/URI">http://purl.org/SemSur/</vann:preferredNamespaceUri>
         <dc:creator xml:lang="en">Said Fathalla</dc:creator>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <dc:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The Semantic Survey Ontology (semsur)</dc:title>
-        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">http://purl.org/SemSur/</vann:preferredNamespaceUri>
+        <vann:preferredNamespacePrefix>semsur</vann:preferredNamespacePrefix>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</owl:versionInfo>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-01-08</terms:issued>
         <dc:rights>Copyright 2018 </dc:rights>
         <dc:creator xml:lang="en">Soeren Auer</dc:creator>
         <dc:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">SemSur, the Semantic Survey Ontology, is a core ontology for describing individual research problems, approaches, implementations and evaluations in a structured, comparable way.</dc:description>
-		<cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/> 
     </owl:Ontology>
     
 
