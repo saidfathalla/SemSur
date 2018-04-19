@@ -56,7 +56,8 @@
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</owl:versionInfo>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-01-08</terms:issued>
         <dc:creator xml:lang="en">Soeren Auer</dc:creator>
-        <terms:license rdf:datatype="http://purl.org/dc/terms/URI">https://purl.org/semsur/license</terms:license>
+        <dc:rights>Copyright © 2011 </dc:rights>
+ <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/> 
     </owl:Ontology>
     
 
