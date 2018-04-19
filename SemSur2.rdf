@@ -57,8 +57,9 @@
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</owl:versionInfo>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-01-08</terms:issued>
         <dc:rights>Copyright 2018 </dc:rights>
-        <dc:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">SemSur, the Semantic Survey Ontology, is a core ontology for describing individual research problems, approaches, implementations and evaluations in a structured, comparable way.</dc:title>
+        <dc:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The Semantic Survey Ontology</dc:title>
         <dc:creator xml:lang="en">Soeren Auer</dc:creator>
+        <dc:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">SemSur, the Semantic Survey Ontology, is a core ontology for describing individual research problems, approaches, implementations and evaluations in a structured, comparable way.</dc:description>
     </owl:Ontology>
     
 
