@@ -2,7 +2,7 @@
 <rdf:RDF xmlns="http://purl.org/SemSur/"
      xml:base="http://purl.org/SemSur/"
      xmlns:schema="http://schema.org/"
-     xmlns:سثةسعق="http://purl.org/SemSur/"
+     xmlns:semsur="http://purl.org/SemSur/"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:pattern="http://www.essepuntato.it/2008/12/pattern#"
