@@ -2,7 +2,6 @@
 <rdf:RDF xmlns="http://purl.org/SemSur/"
      xml:base="http://purl.org/SemSur/"
      xmlns:schema="http://schema.org/"
-     xmlns:semsur="http://purl.org/SemSur/"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:pattern="http://www.essepuntato.it/2008/12/pattern#"
@@ -26,6 +25,7 @@
      xmlns:swrc="http://swrc.ontoware.org/ontology#"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:semsur="http://purl.org/SemSur/"
      xmlns:j.0="http://purl.org/spar/deo/"
      xmlns:skos2="http://www.w3.org/2008/05/skos#"
      xmlns:core="http://dataid.dbpedia.org/ns/core#"
@@ -58,8 +58,11 @@
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-01-08</terms:issued>
         <dc:rights>Copyright 2018 </dc:rights>
         <dc:creator xml:lang="en">Soeren Auer</dc:creator>
-        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">semsur</vann:preferredNamespacePrefix>
-        <dc:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">SemSur, the Semantic Survey Ontology, is a core ontology for describing individual research problems, approaches, implementations and evaluations in a structured, comparable way.</dc:description>
+        <vann:preferredNamespacePrefix>semsur</vann:preferredNamespacePrefix>
+        <dc:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal"> SemSur, the Semantic Survey Ontology, is a core ontology for describing individual research problems, approaches, implementations and evaluations in a structured, comparable way.</dc:description>
+        <dc:contributor> <foaf:Person rdf:about="http://sda.tech/SemSur/foaf.rdf"/>  </dc:contributor>
+		
+
     </owl:Ontology>
     
 
