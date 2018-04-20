@@ -53,7 +53,7 @@
         <vann:preferredNamespaceUri rdf:datatype="http://purl.org/dc/terms/URI">http://purl.org/SemSur/</vann:preferredNamespaceUri>
         <dc:creator xml:lang="en">Said Fathalla</dc:creator>
         <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <dc:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The Semantic Survey Ontology (semsur)</dc:title>
+        <dc:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The Semantic Survey Ontology </dc:title>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</owl:versionInfo>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-01-08</terms:issued>
         <dc:rights>Copyright 2018 </dc:rights>
