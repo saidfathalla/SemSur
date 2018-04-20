@@ -5,11 +5,12 @@
     <uri id="User Entered Import Resolution" name="http://www.hozo.jp/owl/EXPOApr19.xml/" uri="imports/EXPO04-19-06.owl"/>
     <uri id="Imports Wizard Entry" name="http://www.w3.org/2016/03/mls#" uri="https://raw.githubusercontent.com/ML-Schema/core/master/MLSchema.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1524212130259" name="http://dataid.dbpedia.org/ns/core#" uri="imports/DataId-Ontology/dataid.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1524212130259" name="duplicate:http://purl.org/SemSur/" uri="SemSur%20-%20Copy.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1524212130259" name="duplicate:http://purl.org/SemSur/" uri="SemSur.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1524212130259" name="duplicate:http://purl.org/SemSur/" uri="SemSur2.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1524212130259" name="http://www.hozo.jp/owl/EXPOApr19.xml/" uri="imports/EXPO04-19-06.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1524212130259" name="http://www.w3.org/2004/02/skos/core" uri="imports/DataId-Ontology/imports/skos.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1524214567414" name="http://dataid.dbpedia.org/ns/core#" uri="imports/DataId-Ontology/dataid.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1524214567414" name="duplicate:http://purl.org/SemSur/" uri="SemSur%20-%20Copy.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1524214567414" name="duplicate:http://purl.org/SemSur/" uri="SemSur.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1524214567414" name="duplicate:http://purl.org/SemSur/" uri="SemSur2%20-%20with%20semsur1.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1524214567414" name="duplicate:http://purl.org/SemSur/" uri="SemSur2.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1524214567414" name="http://www.hozo.jp/owl/EXPOApr19.xml/" uri="imports/EXPO04-19-06.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1524214567414" name="http://www.w3.org/2004/02/skos/core" uri="imports/DataId-Ontology/imports/skos.rdf"/>
     </group>
 </catalog>
