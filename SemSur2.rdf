@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.org/SemSur/"
      xml:base="http://purl.org/SemSur/"
-     xmlns:semsur1="http://purl.org/semsur/"
+     xmlns:semsur="http://purl.org/SemSur/"
      xmlns:schema="http://schema.org/"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -26,7 +26,6 @@
      xmlns:swrc="http://swrc.ontoware.org/ontology#"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-     xmlns:semsur="http://purl.org/SemSur/"
      xmlns:j.0="http://purl.org/spar/deo/"
      xmlns:skos2="http://www.w3.org/2008/05/skos#"
      xmlns:core="http://dataid.dbpedia.org/ns/core#"
