@@ -48,12 +48,12 @@
         <owl:imports rdf:resource="http://swrl.stanford.edu/ontologies/3.3/swrla.owl"/>
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <owl:priorVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</owl:priorVersion>
+        <dc:creator xml:lang="en">Said Fathalla</dc:creator>
         <dc:creator xml:lang="en">Sahar Vahdati</dc:creator>
         <terms:title xml:lang="en">SemSur, Version 2.0</terms:title>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-11</terms:modified>
         <dc:creator xml:lang="en">Christoph Lange</dc:creator>
         <vann:preferredNamespaceUri rdf:datatype="http://purl.org/dc/terms/URI">http://purl.org/SemSur/</vann:preferredNamespaceUri>
-        <dc:creator xml:lang="en">Said Fathalla</dc:creator>
         <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <dc:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The Semantic Survey Ontology (semsur)</dc:title>
         <vann:preferredNamespacePrefix>semsur</vann:preferredNamespacePrefix>
