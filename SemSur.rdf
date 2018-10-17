@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://purl.org/SemSur/"
-     versionIRI="http://purl.org/SemSur/2.0">
+     versionIRI="http://purl.org/SemSur/">
     <Prefix name="" IRI="http://purl.org/SemSur/"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="ns" IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#"/>
@@ -62,12 +62,12 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SemSur, Version 2.0</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="terms:modified"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2018-04-11</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Christoph Lange</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:modified"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2018-10-16</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
@@ -91,7 +91,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:license"/>
-        <Literal datatypeIRI="http://purl.org/dc/terms/URI">https://purl.org/semsur/license</Literal>
+        <IRI>http://creativecommons.org/licenses/by/3.0/</IRI>
     </Annotation>
     <Declaration>
         <NamedIndividual abbreviatedIRI="terms:AgentClass"/>
@@ -881,6 +881,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="expo:DynamismOfModel"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="Synonym"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="swrc:Manager"/>
@@ -5096,6 +5099,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="expo:PairedComparison"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasSynonym"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="expo:Process-relatedRole"/>
@@ -63514,6 +63520,26 @@ Web with tools that are comparatively simple and intuitive to use. To attain thi
         </Head>
     </DLSafeRule>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>Synonym</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Saeed Fathalla</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <IRI>Synonym</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-19T08:57:25Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>hasSynonym</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Saeed Fathalla</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <IRI>hasSynonym</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-19T08:54:46Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="terms:modified"/>
         <AbbreviatedIRI>dc:</AbbreviatedIRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2012-06-14</Literal>
@@ -67514,6 +67540,11 @@ potential applications are discussed.</Literal>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2012</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>http://purl.org/semsur/RegularPaper</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A research article is an article that reports the methods and results of an original study performed by the authors.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="swrc:abstract"/>
         <IRI>http://purl.org/semsur/Relational.OWL_-_A_Data_and_Schema_Representation_Format_Based_on_OWL</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">One of the research fields which has recently gained much scientific interest within the database community are Peer-to-Peer databases, where peers have the autonomy to decide whether to join or to leave an information sharing environment at any time. Such volatile data nodes may appear shortly, collect or deliver some data, and disappear again. It even can not be assured that a peer joins the network ever again. In this paper we introduce a representation format fort both, schema and data information based on the Web Ontology Language OWL. According to the advantages of the Semantic Web we are thus able to represent and to transfer every schema and data component of a database to any partner, without having to define a data and schema exchange format explicitly.</Literal>
@@ -67549,6 +67580,16 @@ potential applications are discussed.</Literal>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Splendid</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="Synonym"/>
+        <IRI>http://purl.org/semsur/SurveyPaper</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Review paper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>http://purl.org/semsur/SurveyPaper</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A review article is an article that summarizes the current state of understanding on a topic.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="swrc:abstract"/>
         <IRI>http://purl.org/semsur/Use_of_OWL_and_SWRL_for_Semantic_Relational_Database_Translation</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">General purpose query interfaces to relational databases can expose vast amounts of content to the Semantic Web. In this paper, we discuss Automapper, a tool that automatically generates data source and mapping ontologies using OWL and SWRL. We also describe the use of these ontologies in our Semantic Distributed Query architecture, an implementation for mapping RDF queries to disparate data sources, including SQL-compliant databases, using SPARQL as the query language. This paper covers Automapper functionality that exploits some of the expressiveness of OWL to produce more accurate translations. A comparison with related work on Semantic Web access to relational databases is also provided as well as an investigation into the use of OWL 1.1.</Literal>
@@ -67577,6 +67618,21 @@ potential applications are discussed.</Literal>
         <AnnotationProperty abbreviatedIRI="swrc:year"/>
         <IRI>http://purl.org/semsur/Zhishi.links_Results_for_OAEI_2011</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2011</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="Synonym"/>
+        <AbbreviatedIRI>swrc:Article</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Manuscript</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>swrc:Article</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A research article will nearly always be published in a peer-reviewed journal or conference.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>swrc:Publication</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">an article issued for public sale</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="swrc:abstract"/>
@@ -67810,6 +67866,10 @@ and Freebase being among the most prominent ones. Those graphs are often constru
         <IRI>http://vocab.cs.uni-bonn.de/unistruct#Updating_Relational_Data_via_SPARQL/Update</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2010</Literal>
     </AnnotationAssertion>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="Synonym"/>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+    </SubAnnotationPropertyOf>
     <SubAnnotationPropertyOf>
         <AnnotationProperty abbreviatedIRI="terms:abstract"/>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
