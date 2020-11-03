@@ -32,8 +32,6 @@
      xmlns:mls="http://www.w3.org/ns/mls#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:prov1="http://www.w3.org/ns/prov#"
-	 xmlns:vann="http://purl.org/vocab/vann/"
-	 xmlns:cc="http://creativecommons.org/ns#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.org/SemSur/">
         <owl:versionIRI rdf:resource="http://purl.org/SemSur/2.0"/>

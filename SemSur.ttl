@@ -27950,7 +27950,7 @@ potential applications are discussed.""" ,
                                               <http://purl.org/semsur/usesInformationAsset> <http://purl.org/semsur/ACM> ,
                                                                                             <http://purl.org/semsur/DBLP> ,
                                                                                             <http://purl.org/semsur/IEEE> ;
-                                              <http://purl.org/semsur/hasExperimentSetup> "We tested Avalanche using a five-node cluster. Each machine had 2GB RAM and an Intel Core 2 Duo E8500 "@3.16ghz. we chose this small number of nodes to better illustrate avalanche’s query handling strategies, but did not measure its ability to scale. .
+                                              <http://purl.org/semsur/hasExperimentSetup> "We tested Avalanche using a five-node cluster. Each machine had 2GB RAM and an Intel Core 2 Duo E8500 @3.16ghz. we chose this small number of nodes to better illustrate avalanches query handling strategies, but did not measure its ability to scale.".
 
 
 ###  http://purl.org/semsur/Axel-Cyrille
@@ -30437,7 +30437,7 @@ in most of VOID documents, we could not find a chance to execute comprehensive s
                                                             <http://purl.org/semsur/hasConclusion> "In this report, we have presented a brief description of Zhishi.links, an instance matching system. We have introduced the architecture of our system and specific techniques we used. Also, the results have been analyzed in detail and several guides for improvements have been proposed. We look forwards to build an instance matching system with better performance and higher stability in the future." ;
                                                             <http://purl.org/semsur/hasFutureWork> "We look forwards to build an instance matching system with better performance and higher stability in the future." ;
                                                             <http://purl.org/semsur/subject> "Link Discovery" ;
-                                                            swrc:abstract "This report presents the results of Zhishi.links, a distributed instance matching system, for this year’s Ontology Alignment Evaluation Initiative (OAEI) campaign. We participate in Data Interlinking track (DI) of IM"@oaei2011. in this report, we briefly describe the architecture and matching strategies of zhishi.links, followed by an analysis of the results ;
+                                                            swrc:abstract "This report presents the results of Zhishi.links, a distributed instance matching system, for this years Ontology Alignment Evaluation Initiative (OAEI) campaign. We participate in Data Interlinking track (DI) of IM@oaei2011. in this report, we briefly describe the architecture and matching strategies of zhishi.links, followed by an analysis of the results" ;
                                                             swrc:title "Zhishi.links Results for OAEI 2011" ;
                                                             swrc:year 2011 .
 
