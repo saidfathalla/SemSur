@@ -42,7 +42,7 @@
         <owl:imports rdf:resource="http://purl.org/spar/deo"/>
         <owl:imports rdf:resource="http://www.w3.org/2003/11/swrl#"/>
         <owl:imports rdf:resource="http://purl.org/spar/fabio/2017-05-29"/>
-        <owl:imports rdf:resource="http://www.w3.org/2016/03/mls#"/>
+        <owl:imports rdf:resource="http://www.w3.org/2016/10/mls/"/>
         <owl:imports rdf:resource="http://swrl.stanford.edu/ontologies/3.3/swrla.owl"/>
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <owl:priorVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</owl:priorVersion>
